@@ -4,8 +4,6 @@
 
 I design and build **secure-by-design, compliant-by-default** cloud systems by embedding security and governance directly into infrastructure and deployment workflows.
 
-My focus is on making security *enforceable*, not just documented.
-
 ---
 
 ### 🔐 Core Domains
