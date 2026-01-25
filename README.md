@@ -1,8 +1,7 @@
-## Ayush Yadav 👨‍💻
+**Ayush Yadav** 👨‍💻
+☁️ Cloud Security & Compliance | 🧱 IaC • 📜 Policy as Code • ⚙️ Security Automation
 
-**☁️ Cloud Security & Compliance | 🧱 IaC • 📜 Policy as Code • ⚙️ Security Automation**
-
-I design and build **secure-by-design, compliant-by-default** cloud systems by embedding security and governance directly into infrastructure and deployment workflows.
+I design and build **secure-by-design, compliant-by-default** cloud systems by embedding security controls, governance, and compliance directly into infrastructure and deployment workflows.
 
 ---
 
@@ -19,18 +18,18 @@ I design and build **secure-by-design, compliant-by-default** cloud systems by e
 
 ### 🛠️ What I Build
 
-* 🚦 Compliance-gated CI/CD pipelines (block insecure infra before deploy)
-* 🧩 Security-first Terraform modules and baselines
+* 🚦 Compliance-gated CI/CD pipelines that block insecure infrastructure before deployment
+* 🧩 Security-first Terraform modules and baseline architectures
 * 🧠 Cloud policy engines using OPA (Rego)
 * 🔍 Automated security posture validation
-* 🔄 Drift detection & remediation workflows
-* 📊 Audit-ready evidence generation
+* 🔄 Drift detection and remediation workflows
+* 📊 Audit-ready compliance evidence generation
 
 ---
 
 ### 📜 Compliance & Governance Focus
 
-I work on mapping regulatory and security frameworks into real cloud controls:
+I work on translating regulatory and security frameworks into real, enforceable cloud controls:
 
 * 🏛️ ISO 27001
 * 🛡️ SOC 2
@@ -55,8 +54,8 @@ I work on mapping regulatory and security frameworks into real cloud controls:
 **Policy & Security Tooling**
 
 * 📜 Open Policy Agent (OPA / Rego)
-* 🐺 Checkov
-* 🦊 Prowler
+* Checkov (IaC security scanning)
+* Prowler (AWS security posture assessment)
 * 🔑 AWS Security Hub
 * 🕵️ GuardDuty
 * 📜 CloudTrail
@@ -64,10 +63,17 @@ I work on mapping regulatory and security frameworks into real cloud controls:
 
 **Security Practices**
 
-* 🔐 Least-privilege IAM
-* 🗝️ KMS encryption
-* 📦 Secure CI/CD secrets handling
-* 📊 Logging, monitoring & audit trails
+* 🔐 Least-privilege IAM design
+* 🗝️ KMS-based encryption strategies
+* 📦 Secure secrets handling in CI/CD pipelines
+* 📊 Centralized logging, monitoring, and audit trails
 
-🧪 I also maintain a separate organization for experimentation, labs, and skill-building:
-**Ayush-Labs** → used for Terraform snippets, cloud SDK experiments, frontend/backend practice, and rapid prototyping.
+---
+
+### 🧪 Experimental & Learning Environment
+
+I maintain a separate organization for controlled experimentation, rapid prototyping, and skill development:
+
+**Ayush-Labs**
+Used for Terraform prototypes, cloud SDK experiments, frontend/backend practice, and focused engineering exploration.
+
