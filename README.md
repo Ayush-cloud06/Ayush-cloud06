@@ -20,6 +20,9 @@ I design **secure-by-design, compliant-by-default cloud systems** by embedding s
 
 I am building a simulated enterprise security platform demonstrating how organizations can implement **secure and compliant cloud environments**.
 
+Main architecture repository:
+### 📜 [Ayka-Secure-Technologies-GmbH](https://github.com/Ayush-cloud06/Ayka-Secure-Technologies-GmbH)
+
 ```
                          ┌─────────────────────────────┐
                          │   Developer / Engineer      │
@@ -103,29 +106,25 @@ I am building a simulated enterprise security platform demonstrating how organiz
                │  Audit Reports                              │
                └─────────────────────────────────────────────┘
 ```
-Platform Components
+## 🧩 Platform Components : 
 
-cloud-platform-control-plane
-→ Secure multi-account landing zone
+🏗️ **[cloud-platform-control-plane](https://github.com/Ayush-cloud06/cloud-platform-control-plane)**  
+→ Secure multi-account landing zone architecture
 
-aws-security-engineering-core
-→ Security infrastructure modules
+🛡️ **[aws-security-engineering-core](https://github.com/Ayush-cloud06/aws-security-engineering-core)**  
+→ Core security infrastructure modules (logging, identity, detection)
 
-Compliance-Gated-Deployment-Pipeline
-→ CI/CD security enforcement
+🚦 **[Compliance-Gated-Deployment-Pipeline](https://github.com/Ayush-cloud06/Compliance-Gated-Deployment-Pipeline)**  
+→ CI/CD pipeline enforcing security and compliance checks
 
-Cloud-Policy-Engine
-→ Policy-as-code governance
+📜 **[Cloud-Policy-Engine](https://github.com/Ayush-cloud06/Cloud-Policy-Engine)**  
+→ Policy-as-code governance using OPA / Rego
 
-aws-automated-remediation-guardrails
-→ Automated security response
+⚡ **[aws-automated-remediation-guardrails](https://github.com/Ayush-cloud06/aws-automated-remediation-guardrails)**  
+→ Automated detection and remediation of cloud misconfigurations
 
-cloud-security-compliance-automation
-→ Compliance evidence generation 
-
-
-Main architecture repository:
-### Ayka Secure Technologies GmbH 
+📊 **[cloud-security-compliance-automation](https://github.com/Ayush-cloud06/cloud-security-compliance-automation)**  
+→ Compliance evidence generation and audit automation
 
 
 ## 🛠️ What I Build
