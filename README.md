@@ -1,79 +1,93 @@
-**Ayush Yadav** 👨‍💻
-☁️ Cloud Security & Compliance | 🧱 IaC • 📜 Policy as Code • ⚙️ Security Automation
+# Ayush Yadav 👨‍💻
 
-I design and build **secure-by-design, compliant-by-default** cloud systems by embedding security controls, governance, and compliance directly into infrastructure and deployment workflows.
+☁️ Cloud Security & Compliance Engineering  
+🧱 Infrastructure as Code • 📜 Policy as Code • ⚙️ Security Automation
 
----
+I design **secure-by-design, compliant-by-default cloud systems** by embedding security controls, governance, and compliance directly into infrastructure and deployment workflows.
 
-### 🔐 Core Domains
 
-* Cloud Security Architecture
-* Infrastructure as Code (Terraform)
-* Policy as Code (OPA / Rego)
-* Compliance Automation & Guardrails
-* CI/CD Security Enforcement
-* Preventive Governance Engineering
+## 🔐 Core Domains
 
----
+- Cloud Security Architecture  
+- Infrastructure as Code (Terraform)  
+- Policy as Code (OPA / Rego)  
+- Compliance Automation & Guardrails  
+- CI/CD Security Enforcement  
+- Preventive Governance Engineering  
 
-### 🛠️ What I Build
 
-* 🚦 Compliance-gated CI/CD pipelines that block insecure infrastructure before deployment
-* 🧩 Security-first Terraform modules and baseline architectures
-* 🧠 Cloud policy engines using OPA (Rego)
-* 🔍 Automated security posture validation
-* 🔄 Drift detection and remediation workflows
-* 📊 Audit-ready compliance evidence generation
+## 🧱 Enterprise Security Platform (Flagship Project)
 
----
+I am building a simulated enterprise security platform demonstrating how organizations can implement **secure and compliant cloud environments**.
 
-### 📜 Compliance & Governance Focus
+Architecture components include:
 
-I work on translating regulatory and security frameworks into real, enforceable cloud controls:
+- Secure multi-account cloud landing zones  
+- Policy-as-code governance guardrails  
+- Compliance-gated CI/CD pipelines  
+- Automated cloud security remediation  
+- Continuous audit evidence generation  
 
-* 🏛️ ISO 27001
-* 🛡️ SOC 2
-* 📏 CIS Benchmarks
-* 🧾 GDPR (technical safeguards & control enforcement)
+Main architecture repository:
 
----
+Ayka Secure Technologies GmbH
 
-### ⚙️ Tools & Technologies
 
-**Cloud & Platforms**
+## 🛠️ What I Build
 
-* ☁️ AWS (Primary)
-* 🌐 Azure & GCP (working exposure)
+- 🚦 Compliance-gated CI/CD pipelines that block insecure infrastructure before deployment  
+- 🧩 Security-first Terraform modules and baseline architectures  
+- 🧠 Cloud policy engines using OPA (Rego)  
+- 🔍 Automated cloud security posture validation  
+- 🔄 Drift detection and remediation workflows  
+- 📊 Audit-ready compliance evidence generation  
 
-**Infrastructure & Automation**
 
-* 🧱 Terraform
-* 🔁 GitHub Actions
-* 🐧 Linux
+## 📜 Compliance & Governance Focus
 
-**Policy & Security Tooling**
+I work on translating regulatory and security frameworks into enforceable cloud controls:
 
-* 📜 Open Policy Agent (OPA / Rego)
-* Checkov (IaC security scanning)
-* Prowler (AWS security posture assessment)
-* 🔑 AWS Security Hub
-* 🕵️ GuardDuty
-* 📜 CloudTrail
-* 🧭 AWS Config
+- 🏛️ ISO 27001  
+- 🛡️ SOC 2  
+- 📏 CIS Benchmarks  
+- 🧾 GDPR (technical safeguards & control enforcement)  
 
-**Security Practices**
 
-* 🔐 Least-privilege IAM design
-* 🗝️ KMS-based encryption strategies
-* 📦 Secure secrets handling in CI/CD pipelines
-* 📊 Centralized logging, monitoring, and audit trails
+## ⚙️ Tools & Technologies
 
----
+### Cloud Platforms
+AWS (Primary)  
+Azure • Google Cloud
 
-### 🧪 Experimental & Learning Environment
+### Infrastructure & Automation
+Terraform  
+GitHub Actions  
+Linux
 
-I maintain a separate organization for controlled experimentation, rapid prototyping, and skill development:
+### Policy & Security Tooling
+Open Policy Agent (OPA / Rego)  
+Checkov  
+Prowler  
 
-**Ayush-Labs**
-Used for Terraform prototypes, cloud SDK experiments, frontend/backend practice, and focused engineering exploration.
+### AWS Security Services
+Security Hub  
+GuardDuty  
+CloudTrail  
+AWS Config  
 
+
+## 🔐 Security Practices
+
+- Least-privilege IAM design  
+- KMS-based encryption strategies  
+- Secure secrets handling in CI/CD pipelines  
+- Centralized logging, monitoring, and audit trails  
+
+
+## 🧪 Experimental Environment
+
+I maintain a separate organization for rapid experimentation and prototyping:
+
+Ayush-Labs
+
+Used for Terraform prototypes, SDK experiments, infrastructure automation tests, and focused engineering exploration.
