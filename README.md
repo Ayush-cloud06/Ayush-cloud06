@@ -20,17 +20,112 @@ I design **secure-by-design, compliant-by-default cloud systems** by embedding s
 
 I am building a simulated enterprise security platform demonstrating how organizations can implement **secure and compliant cloud environments**.
 
-Architecture components include:
+```
+                         ┌─────────────────────────────┐
+                         │   Developer / Engineer      │
+                         │  (Infrastructure Changes)   │
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │   Compliance-Gated CI/CD    │
+                         │   Deployment Pipeline       │
+                         │  (GitHub Actions + Checks)  │
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │       Policy Engine         │
+                         │      (OPA / Rego)           │
+                         │  Preventive Governance      │
+                         └──────────────┬──────────────┘
+                                        │
+                           Deployment Allowed / Blocked
+                                        │
+                                        ▼
+                         ┌─────────────────────────────┐
+                         │ Terraform Infrastructure    │
+                         │ Deployment                  │
+                         │ (Secure Baseline Modules)   │
+                         └──────────────┬──────────────┘
+                                        │
+                                        ▼
+               ┌─────────────────────────────────────────────┐
+               │        Cloud Platform Control Plane         │
+               │                                             │
+               │  Multi-Account Architecture                 │
+               │  ├─ Security Account                        │
+               │  ├─ Logging Account                         │
+               │  ├─ Production Accounts                     │
+               │  └─ Sandbox Accounts                        │
+               │                                             │
+               │  Guardrails (SCP / IAM Boundaries)          │
+               └──────────────┬──────────────────────────────┘
+                              │
+                              ▼
+               ┌─────────────────────────────────────────────┐
+               │        AWS Security Engineering Core        │
+               │                                             │
+               │  Logging & Monitoring                       │
+               │  Identity Architecture                      │
+               │  Security Services Integration              │
+               │  Detection Controls                         │
+               └──────────────┬──────────────────────────────┘
+                              │
+                              ▼
+               ┌─────────────────────────────────────────────┐
+               │     Detection & Security Monitoring         │
+               │                                             │
+               │  CloudTrail                                 │
+               │  AWS Config                                 │
+               │  GuardDuty                                  │
+               │  Security Hub                               │
+               └──────────────┬──────────────────────────────┘
+                              │
+                        Security Events
+                              │
+                              ▼
+               ┌─────────────────────────────────────────────┐
+               │  Automated Remediation Guardrails           │
+               │                                             │
+               │  Misconfiguration Detected                  │
+               │  → Automated Security Fix                   │
+               │  → Alert + Audit Record                     │
+               └──────────────┬──────────────────────────────┘
+                              │
+                              ▼
+               ┌─────────────────────────────────────────────┐
+               │   Compliance & Evidence Automation          │
+               │                                             │
+               │  Control Mapping                            │
+               │  ISO 27001 / SOC2 / CIS                     │
+               │  Evidence Collection                        │
+               │  Audit Reports                              │
+               └─────────────────────────────────────────────┘
+```
+Platform Components
 
-- Secure multi-account cloud landing zones  
-- Policy-as-code governance guardrails  
-- Compliance-gated CI/CD pipelines  
-- Automated cloud security remediation  
-- Continuous audit evidence generation  
+cloud-platform-control-plane
+→ Secure multi-account landing zone
+
+aws-security-engineering-core
+→ Security infrastructure modules
+
+Compliance-Gated-Deployment-Pipeline
+→ CI/CD security enforcement
+
+Cloud-Policy-Engine
+→ Policy-as-code governance
+
+aws-automated-remediation-guardrails
+→ Automated security response
+
+cloud-security-compliance-automation
+→ Compliance evidence generation 
+
 
 Main architecture repository:
-
-Ayka Secure Technologies GmbH
+### Ayka Secure Technologies GmbH 
 
 
 ## 🛠️ What I Build
