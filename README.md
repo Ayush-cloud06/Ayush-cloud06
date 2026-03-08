@@ -4,7 +4,7 @@
 🧱 Infrastructure as Code • 📜 Policy as Code • ⚙️ Security Automation
 
 I design **secure-by-design, compliant-by-default cloud systems** by embedding security controls, governance, and compliance directly into infrastructure and deployment workflows.
-
+---
 
 ## 🔐 Core Domains
 
@@ -15,7 +15,7 @@ I design **secure-by-design, compliant-by-default cloud systems** by embedding s
 - CI/CD Security Enforcement  
 - Preventive Governance Engineering  
 
-
+---
 ## 🧱 Enterprise Security Platform (Flagship Project)
 
 I am building a simulated enterprise security platform demonstrating how organizations can implement **secure and compliant cloud environments**.
@@ -125,6 +125,7 @@ Main architecture repository:
 
 📊 **[cloud-security-compliance-automation](https://github.com/Ayush-cloud06/cloud-security-compliance-automation)**  
 → Compliance evidence generation and audit automation
+---
 
 
 ## 🛠️ What I Build
@@ -135,7 +136,7 @@ Main architecture repository:
 - 🔍 Automated cloud security posture validation  
 - 🔄 Drift detection and remediation workflows  
 - 📊 Audit-ready compliance evidence generation  
-
+---
 
 ## 📜 Compliance & Governance Focus
 
@@ -145,30 +146,46 @@ I work on translating regulatory and security frameworks into enforceable cloud 
 - 🛡️ SOC 2  
 - 📏 CIS Benchmarks  
 - 🧾 GDPR (technical safeguards & control enforcement)  
+---
 
+## ⚙️ Cloud Security Engineering Stack
 
-## ⚙️ Tools & Technologies
+### ☁️ Cloud Platforms
+**AWS (Primary)** – multi-account security architecture, service control policies, security services integration  
+**Azure & Google Cloud** – working exposure to identity, governance, and infrastructure security patterns
 
-### Cloud Platforms
-AWS (Primary)  
-Azure • Google Cloud
+### 🧱 Infrastructure Security & Platform Engineering
+Terraform – secure infrastructure baselines and reusable modules  
+GitHub Actions – automated CI/CD enforcement and secure deployment workflows  
+Linux – infrastructure operations, scripting, and automation
 
-### Infrastructure & Automation
-Terraform  
-GitHub Actions  
-Linux
+### 🔐 Identity & Access Security
+IAM least-privilege role architecture  
+cross-account access design  
+break-glass access models  
+role assumption patterns
 
-### Policy & Security Tooling
-Open Policy Agent (OPA / Rego)  
-Checkov  
-Prowler  
+### 🛡️ Detection & Security Monitoring
+AWS Security Hub – centralized security findings  
+GuardDuty – threat detection and anomaly monitoring  
+CloudTrail – API activity logging and audit trails  
+AWS Config – configuration monitoring and drift detection
 
-### AWS Security Services
-Security Hub  
-GuardDuty  
-CloudTrail  
-AWS Config  
+### 📊 Compliance & Governance Automation
+Open Policy Agent (OPA / Rego) – policy-as-code guardrails  
+Checkov – infrastructure security scanning  
+Prowler – AWS security posture and benchmark validation  
 
+### 🔑 Data Protection & Encryption
+KMS-based encryption strategies  
+secure storage encryption enforcement  
+key management policies
+
+### 🚨 Incident Response Automation
+automated misconfiguration remediation  
+security event response workflows  
+audit trail generation for investigations
+---
 
 ## 🔐 Security Practices
 
