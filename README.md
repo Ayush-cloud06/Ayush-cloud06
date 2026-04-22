@@ -2,7 +2,7 @@
   <h1 align="center">Ayush Yadav</h1>
   <p align="center">
     <b>Cloud Security & Compliance Engineer</b><br>
-    <i>Building audit-ready ecosystems with code, not spreadsheets.</i>
+    <i>Architecting Secure, Auditable, and Automated Multi-Cloud Ecosystems</i>
   </p>
 </p>
 
@@ -21,31 +21,34 @@
 ---
 
 ### 🛡️ The Master Architecture: [Ayka-Secure-Technologies-GmbH](https://github.com/Ayush-cloud06/Ayka-Secure-Technologies-GmbH)
-This is my flagship project—a full-scale GRC simulation of a German enterprise. It treats cloud security as an auditable organization compliant with ISO27001, GDPR, enterprise pipeline and infra.
+My flagship project—a complete GRC simulation of an auditable German enterprise.
 
-**🧩 other Repos (Modular Components):**
+**🧩 Modular Security Components as other repos:**
 
-| Module | Purpose | Link |
-| :--- | :--- | :--- |
-| **Control Plane** | Multi-account landing zone & SCPs | [View Repo](https://github.com/Ayush-cloud06/cloud-platform-control-plane) |
-| **Security Core** | Logging, identity, & detection baselines | [View Repo](https://github.com/Ayush-cloud06/aws-security-engineering-core) |
-| **Policy Engine** | Policy-as-Code (OPA / Rego) | [View Repo](https://github.com/Ayush-cloud06/Cloud-Policy-Engine) |
-| **Gatekeeper** | Compliance-gated CI/CD pipelines | [View Repo](https://github.com/Ayush-cloud06/Compliance-Gated-Deployment-Pipeline) |
-| **Guardrails** | Automated detection & remediation | [View Repo](https://github.com/Ayush-cloud06/aws-automated-remediation-guardrails) |
-| **Evidence** | Audit automation & evidence generation | [View Repo](https://github.com/Ayush-cloud06/cloud-security-compliance-automation) |
+| Component | Repository Link |
+| :--- | :--- |
+| **Control Plane** | [cloud-platform-control-plane](https://github.com/Ayush-cloud06/cloud-platform-control-plane) |
+| **Security Core** | [aws-security-engineering-core](https://github.com/Ayush-cloud06/aws-security-engineering-core) |
+| **Policy Engine** | [Cloud-Policy-Engine](https://github.com/Ayush-cloud06/Cloud-Policy-Engine) |
+| **Gatekeeper** | [Compliance-Gated-Pipeline](https://github.com/Ayush-cloud06/Compliance-Gated-Deployment-Pipeline) |
+| **Guardrails** | [aws-automated-remediation-guardrails](https://github.com/Ayush-cloud06/aws-automated-remediation-guardrails) |
+| **Audit Automator** | [cloud-security-compliance-automation](https://github.com/Ayush-cloud06/cloud-security-compliance-automation) |
 
 ---
 
-## 🛠️ Technical Stack
+## 🛠️ Technical Arsenal
 
-### ☁️ Cloud & Infrastructure
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat-square&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232088FF.svg?style=flat-square&logo=github-actions&logoColor=white)
+### ☁️ Multi-Cloud & Containers
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat-square&logo=microsoft-azure&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat-square&logo=kubernetes&logoColor=white)
 
-### 🔐 GRC & Policy
-![OPA](https://img.shields.io/badge/OPA-Rego-white?style=flat-square&logo=open-policy-agent&logoColor=black) ![Checkov](https://img.shields.io/badge/Checkov-Security-brightgreen?style=flat-square) ![Prowler](https://img.shields.io/badge/Prowler-Audit-blue?style=flat-square)
+### ⚙️ Automation & CI/CD
+![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![Boto3](https://img.shields.io/badge/Boto3-Automation-orange?style=flat-square) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat-square&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=flat-square&logo=gitlab&logoColor=white)
 
-### 📜 Specialized Focus
-`ISO 27001` • `TISAX (Automotive)` • `ISO 21434` • `GDPR Enforcement`
+### 🔐 GRC & Security Scanning
+![OPA](https://img.shields.io/badge/OPA-Rego-white?style=flat-square&logo=open-policy-agent&logoColor=black) ![Checkov](https://img.shields.io/badge/Checkov-Security-brightgreen?style=flat-square) ![Trivy](https://img.shields.io/badge/Trivy-Vulnerability-blue?style=flat-square) ![Prowler](https://img.shields.io/badge/Prowler-Audit-blueviolet?style=flat-square) ![TFSec](https://img.shields.io/badge/TFSec-Static_Analysis-red?style=flat-square)
+
+### 📜 Frameworks & Standards
+`TISAX` • `ISO 27001` • `ISO 21434` • `SOC 2` • `NIST` • `GDPR`
 
 ---
 
@@ -58,10 +61,10 @@ This is my flagship project—a full-scale GRC simulation of a German enterprise
 
 ---
 
-## 🧪 Experimental Environment: [Ayush-Labs](https://github.com/Ayush-Labs)
-*Rapid prototyping for Automotive-focused multi-cloud security.*
-* **Current Sprint:** Engineering TISAX-compliant data pipelines.
-* **Sprachziel:** ![German](https://img.shields.io/badge/German-B2_In_Progress-black?style=flat-square&logo=duolingo) 🇩🇪
+## 🧪 The Lab: [Ayush-Labs](https://github.com/Ayush-Labs)
+*Rapid prototyping and Automotive security research.*
+* **Current Focus:** Hardening Kubernetes clusters for TISAX compliance.
+* **Language Path:** ![German](https://img.shields.io/badge/German-B2_In_Progress-black?style=flat-square&logo=duolingo) 🇩🇪
 
 ---
 <p align="center">
