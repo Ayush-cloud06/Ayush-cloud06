@@ -1,35 +1,51 @@
-![Header](https://k-vigly.vercel.app/api/capsule-render?type=wave&color=00b4d8&height=250&section=header&text=Ayush%20Yadav&fontSize=90&desc=Cloud%20Security%20Engineer)
+<p align="center">
+  <h1 align="center">Ayush Yadav</h1>
+  <p align="center">
+    <b>Cloud Security & Compliance Engineer</b><br>
+    <i>Building audit-ready ecosystems with code, not spreadsheets.</i>
+  </p>
+</p>
 
-### ☁️ Converting Regulations into Machine-Enforceable Code
-I build **secure-by-design, compliant-by-default** ecosystems. My focus is automating the "boring" GRC stuff so security scales without human friction. 
-
-**Currently perfecting:** Multi-cloud security & TISAX compliance for the Automotive sector. 🏎️💨
+<p align="center">
+  <a href="https://www.linkedin.com/in/ayush-yadav-5b8578364/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://www.ayushcloud.dev/">
+    <img src="https://img.shields.io/badge/Portfolio-25292e?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  </a>
+  <a href="mailto:contact@ayushcloud.dev">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
 
 ---
 
-## 🏗️ The Flagship: [Ayka-Secure-Technologies-GmbH](https://github.com/Ayush-cloud06/Ayka-Secure-Technologies-GmbH)
-*A full-scale GRC simulation of an auditable enterprise environment.*
+### 🛡️ The Master Architecture: [Ayka-Secure-Technologies-GmbH](https://github.com/Ayush-cloud06/Ayka-Secure-Technologies-GmbH)
+This is my flagship project—a full-scale GRC simulation of a German enterprise. It treats cloud security as an auditable organization compliant with ISO27001, GDPR, enterprise pipeline and infra.
 
-| Component | Repository | Focus |
+**🧩 other Repos (Modular Components):**
+
+| Module | Purpose | Link |
 | :--- | :--- | :--- |
-| **Control Plane** | [cloud-platform-control-plane](https://github.com/Ayush-cloud06/cloud-platform-control-plane) | Multi-account Landing Zones & SCPs |
-| **Security Core** | [aws-security-engineering-core](https://github.com/Ayush-cloud06/aws-security-engineering-core) | SIEM, Identity & Detection Baselines |
-| **Governance** | [Cloud-Policy-Engine](https://github.com/Ayush-cloud06/Cloud-Policy-Engine) | Policy-as-Code (OPA/Rego) |
-| **Enforcement** | [Compliance-Gated-Pipeline](https://github.com/Ayush-cloud06/Compliance-Gated-Deployment-Pipeline) | Shift-left security (Checkov/Prowler) |
-| **Auto-Remedy** | [aws-automated-remediation](https://github.com/Ayush-cloud06/aws-automated-remediation-guardrails) | Real-time drift correction |
+| **Control Plane** | Multi-account landing zone & SCPs | [View Repo](https://github.com/Ayush-cloud06/cloud-platform-control-plane) |
+| **Security Core** | Logging, identity, & detection baselines | [View Repo](https://github.com/Ayush-cloud06/aws-security-engineering-core) |
+| **Policy Engine** | Policy-as-Code (OPA / Rego) | [View Repo](https://github.com/Ayush-cloud06/Cloud-Policy-Engine) |
+| **Gatekeeper** | Compliance-gated CI/CD pipelines | [View Repo](https://github.com/Ayush-cloud06/Compliance-Gated-Deployment-Pipeline) |
+| **Guardrails** | Automated detection & remediation | [View Repo](https://github.com/Ayush-cloud06/aws-automated-remediation-guardrails) |
+| **Evidence** | Audit automation & evidence generation | [View Repo](https://github.com/Ayush-cloud06/cloud-security-compliance-automation) |
 
 ---
 
-## 🛠️ Technical Arsenal
+## 🛠️ Technical Stack
 
-### ☁️ Cloud Platforms & IaC
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoft-azure&logoColor=white) ![GCP](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white)
+### ☁️ Cloud & Infrastructure
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Terraform](https://img.shields.io/badge/terraform-%235835CC.svg?style=flat-square&logo=terraform&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232088FF.svg?style=flat-square&logo=github-actions&logoColor=white)
 
-### 🔐 Security & Governance
-![OPA](https://img.shields.io/badge/OPA-Rego-white?style=for-the-badge&logo=open-policy-agent&logoColor=black) ![Checkov](https://img.shields.io/badge/Checkov-Security-brightgreen?style=for-the-badge) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232088FF.svg?style=for-the-badge&logo=github-actions&logoColor=white)
+### 🔐 GRC & Policy
+![OPA](https://img.shields.io/badge/OPA-Rego-white?style=flat-square&logo=open-policy-agent&logoColor=black) ![Checkov](https://img.shields.io/badge/Checkov-Security-brightgreen?style=flat-square) ![Prowler](https://img.shields.io/badge/Prowler-Audit-blue?style=flat-square)
 
-### 📜 Compliance Frameworks
-`ISO 27001` • `TISAX` • `SOC 2` • `NIST` • `GDPR Technical Controls`
+### 📜 Specialized Focus
+`ISO 27001` • `TISAX (Automotive)` • `ISO 21434` • `GDPR Enforcement`
 
 ---
 
@@ -42,14 +58,12 @@ I build **secure-by-design, compliant-by-default** ecosystems. My focus is autom
 
 ---
 
-## 🧪 The Lab: [Ayush-Labs](https://github.com/Ayush-Labs)
-Where I break things so they don't break in production. 
-* **Prototypes:** Terraform experimental modules.
-* **Research:** SDK deep-dives & Incident Response automation scripts.
-* **Language:** ![German](https://img.shields.io/badge/German-B1%2FB2%20In%20Progress-black?style=flat-square&logo=duolingo)
+## 🧪 Experimental Environment: [Ayush-Labs](https://github.com/Ayush-Labs)
+*Rapid prototyping for Automotive-focused multi-cloud security.*
+* **Current Sprint:** Engineering TISAX-compliant data pipelines.
+* **Sprachziel:** ![German](https://img.shields.io/badge/German-B2_In_Progress-black?style=flat-square&logo=duolingo) 🇩🇪
 
 ---
 <p align="center">
-  <b>Let's build something secure.</b><br>
-  <a href="mailto:your-email@example.com">Email</a> • <a href="https://linkedin.com/in/your-profile">LinkedIn</a>
+  <i>"If it's not automated, it's not compliant."</i>
 </p>
