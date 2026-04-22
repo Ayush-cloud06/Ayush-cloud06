@@ -1,4 +1,6 @@
-# ![header](https://capsule-render.vercel.app/render?type=soft&color=auto&height=200&section=header&text=Ayush%20Yadav&fontSize=70&animation=fadeIn&desc=Cloud%20Security%20%26%20Compliance%20Engineer&descSize=20)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/render?type=soft&color=auto&height=200&section=header&text=Ayush%20Yadav&fontSize=70&animation=fadeIn&desc=Cloud%20Security%20%26%20Compliance%20Engineer&descSize=20" />
+</p>
 
 ### ☁️ Converting Regulations into Machine-Enforceable Code
 I build **secure-by-design, compliant-by-default** ecosystems. My focus is automating the "boring" GRC stuff so security scales without human friction. 
