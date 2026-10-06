@@ -97,8 +97,3 @@ flowchart LR
 | :-- | :-- | :-- |
 | ISO/IEC 27001:2022 Lead Implementer | TÜV SÜD · Cert. No. IN/62172/645925 | Sep 2026 |
 | AWS Certified Solutions Architect – Associate | Amazon Web Services | Jul 2026 · valid to Jul 2029 |
-| AWS Certified Security – Specialty | Amazon Web Services | In preparation |
-
-## Education
-
-**B.A. English (Honours)**, Bidhan Chandra College, Asansol · *expected 2027*
