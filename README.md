@@ -1,118 +1,32 @@
-<p align="center">
-  <h1 align="center">Ayush Yadav</h1>
-  <p align="center">
-    <b>Cloud Security & Compliance Engineer</b><br>
-    <i>Designing systems that make organizations audit-ready by default</i>
-  </p>
-</p>
+### Hi, I'm Ayush.
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/ayush-yadav-5b8578364/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://www.ayushcloud.dev/">
-    <img src="https://img.shields.io/badge/Portfolio-25292e?style=for-the-badge&logo=google-chrome&logoColor=white" />
-  </a>
-  <a href="mailto:contact@ayushcloud.dev">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
+I write compliance controls as code, then try to prove they actually work.
 
----
+Most compliance lives in documents that say a control exists. I care about the version a pipeline can check: a Terraform plan goes in, its findings are mapped to ISO 27001 controls, and the build passes, waits for a human, or fails. Each run leaves behind evidence that someone other than me can verify.
 
-## 🛡️ Flagship System: Ayka Secure Technologies GmbH  
-🔗 https://github.com/Ayush-cloud06/Ayka-Secure-Technologies-GmbH  
+I'm a student in India, learning cloud security and GRC in public. You can find me at [ayushcloud.dev](https://www.ayushcloud.dev/), on [LinkedIn](https://www.linkedin.com/in/ayush-yadav-5b8578364/), or at contact@ayushcloud.dev.
 
-A full-scale simulation of an enterprise cloud security and compliance platform.
+### What I'm building
 
-This system demonstrates how organizations move from **raw infrastructure to audit-ready environments** by transforming governance frameworks into:
+- **[Ayka](https://github.com/Ayush-cloud06/Ayka-Secure-Technologies-GmbH)**: a compliance gate for Terraform plans. Checkov, tfsec and OPA findings are mapped to 38 ISO/IEC 27001:2022 Annex A controls. A fail-closed evaluator decides *pass*, *needs approval* or *fail*, and every run leaves a SHA-256-checksummed evidence bundle. It also includes a deliberately insecure workload that has to fail, because a gate you have never seen fail proves nothing.
+- **[cloud-platform-control-plane](https://github.com/Ayush-cloud06/cloud-platform-control-plane)**: a Terraform module that hardens a bare AWS account in one `apply`. You get MFA-gated roles and no IAM users, a tamper-evident CloudTrail, 15 CIS alarms, and opt-in break-glass access and GuardDuty. 27 `terraform test` cases check the security properties without needing AWS credentials.
 
-- Enforced infrastructure  
-- Continuous monitoring  
-- Automated remediation  
-- Audit-ready evidence  
+### Where I started
 
-**Core Idea:**  
-> Policy → Code → Enforcement → Evidence → Audit  
+These are older, smaller and rougher. I keep them up as a record of how I got here.
 
-Built to reflect real-world alignment with:
-- ISO 27001  
-- GDPR  
-- SOC 2  
+- [Compliance-Gated-Deployment-Pipeline](https://github.com/Ayush-cloud06/Compliance-Gated-Deployment-Pipeline): GitHub Actions with OIDC, running Checkov before apply and Prowler + OPA after.
+- [aws-automated-remediation-guardrails](https://github.com/Ayush-cloud06/aws-automated-remediation-guardrails): EventBridge + Lambda that revoke an open SSH rule or block a public bucket.
+- [aws-security-engineering-core](https://github.com/Ayush-cloud06/aws-security-engineering-core): bare Terraform modules, one per AWS security domain.
+- [Cloud-Policy-Engine](https://github.com/Ayush-cloud06/Cloud-Policy-Engine): my first Rego policies.
+- [cloud-security-compliance-automation](https://github.com/Ayush-cloud06/cloud-security-compliance-automation): my first boto3 scripts, for IAM key and S3 ACL audits.
 
----
+### Rules I try to follow
 
-## 🧩 Modular Security Platform (Component Architecture)
+- If a control has no test, I don't claim it.
+- I say what's simulated. Ayka is a fictional company, and its apply step prints `SIMULATED APPLY`. That's stated in the README, not buried.
+- Fail closed. Missing or broken scanner output counts as a failure, never a pass.
 
-Each repository represents a core component in a unified compliance system:
+### Right now
 
-| Component | Repository |
-| :--- | :--- |
-| **Control Plane** | cloud-platform-control-plane |
-| **Security Core** | aws-security-engineering-core |
-| **Policy Engine** | Cloud-Policy-Engine |
-| **Gatekeeper (CI/CD Enforcement)** | Compliance-Gated-Deployment-Pipeline |
-| **Automated Guardrails** | aws-automated-remediation-guardrails |
-| **Audit Automation** | cloud-security-compliance-automation |
-
-**System Behavior:**
-
-- Policies are defined and mapped to controls  
-- Enforced pre-deployment via pipelines  
-- Violations are detected and remediated automatically  
-- Evidence is continuously generated for audit readiness  
-
----
-
-## 🚀 How the System Works (End-to-End)
-• Define compliance requirements (ISO / GDPR / SOC2)
-• Translate into policy-as-code (OPA, checks)
-• Enforce via CI/CD pipelines
-• Deploy secure infrastructure (Terraform)
-• Monitor for drift and violations
-• Auto-remediate misconfigurations
-• Collect and structure audit evidence
-
-
-> Compliance is not documented after the fact — it is enforced and proven continuously.
-
----
-
-## 🛠️ Technical Arsenal
-
-### ☁️ Multi-Cloud & Containers
-AWS • Azure • Docker • Kubernetes  
-
-### ⚙️ Automation & CI/CD
-Python • Boto3 • Terraform • GitHub Actions • GitLab  
-
-### 🔐 Security & Policy Enforcement
-OPA (Rego) • Checkov • Trivy • Prowler • tfsec  
-
-### 📜 Frameworks & Standards
-ISO 27001 • GDPR • SOC 2 • NIST • TISAX • ISO 21434  
-
----
-
-## 📊 Technical Telemetry
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Ayush-cloud06&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayush-cloud06&layout=compact&theme=tokyonight" />
-</p>
-
----
-
-## 🧪 The Lab: Ayush-Labs  
-🔗 https://github.com/Ayush-Labs  
-
-Rapid prototyping environment for:
-- Security experimentation  
-- Detection engineering  
-- Automotive compliance research  
-
----
-
-<p align="center">
-  <i>"If it's not enforced, it's not compliant."</i>
-</p>
+I'm going deeper on Docker, Kubernetes and Rego, all through a security lens. Next for the control plane: AWS Organizations SCPs, and an organization trail feeding a separate log-archive account.
