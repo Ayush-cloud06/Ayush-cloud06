@@ -42,6 +42,7 @@
   function onKeydown(e: KeyboardEvent) {
     if (e.defaultPrevented || e.ctrlKey || e.metaKey || e.altKey) return;
     if (e.key === 'Escape') {
+      if (section === 'drill' || section === 'review') return; // sessions handle Esc themselves
       if (isTyping(e)) (e.target as HTMLElement).blur();
       if (section === 'unit') go('/units');
       else if (section !== 'today') go('/today');
