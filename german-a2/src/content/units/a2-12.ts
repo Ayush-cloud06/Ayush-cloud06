@@ -1,0 +1,153 @@
+import type { Unit } from '../types';
+
+const unit: Unit = {
+  id: 'a2-12',
+  level: 'A2',
+  order: 24,
+  title: 'Opinions, media & plans',
+  titleDe: 'Meinungen, Medien und Pläne',
+  goal: 'Ask polite indirect questions, talk about plans and the media, give your opinion — and check you are ready for A2.',
+  grammar: [
+    {
+      heading: 'Indirect questions',
+      body:
+        'Embedding a question makes it more polite: Können Sie mir sagen, …? / Wissen Sie, …? / Ich weiß nicht, … The question becomes a subordinate clause: **verb to the end**.\n\n' +
+        'W-questions keep their W-word. Yes/no questions use **ob** (= whether / if). Trap: no "do/does" and no inversion — "Können Sie mir sagen, wo ist der Bahnhof?" is wrong.',
+      table: {
+        head: ['Direct question', 'Indirect question'],
+        rows: [
+          ['Wo ist die Apotheke?', 'Können Sie mir sagen, wo die Apotheke ist?'],
+          ['Wann fängt der Film an?', 'Ich weiß nicht, wann der Film anfängt.'],
+          ['Wie viel kostet das Ticket?', 'Wissen Sie, wie viel das Ticket kostet?'],
+          ['Kommt sie morgen?', 'Weißt du, ob sie morgen kommt?'],
+          ['Hat der Zug Verspätung?', 'Ich möchte wissen, ob der Zug Verspätung hat.'],
+        ],
+      },
+    },
+    {
+      heading: 'Futur I: werden + infinitive',
+      body:
+        'Form: **werden** (position 2) + infinitive at the end. Use it for predictions, promises and firm intentions. For plans with a time word, German usually just uses the **present**: Morgen fahre ich nach Bonn.\n\n' +
+        'Trap: German **will** = want (wollen). "I will go" = Ich **werde** gehen; "Ich will gehen" = I want to go.',
+      table: {
+        head: ['Person', 'werden', 'Example'],
+        rows: [
+          ['ich', 'werde', 'Ich werde dich anrufen.'],
+          ['du', 'wirst', 'Du wirst das schaffen.'],
+          ['er / sie / es', 'wird', 'Es wird morgen regnen.'],
+          ['wir', 'werden', 'Wir werden umziehen.'],
+          ['ihr', 'werdet', 'Ihr werdet sehen.'],
+          ['sie / Sie', 'werden', 'Sie werden es nicht glauben.'],
+        ],
+      },
+      examples: [
+        { de: 'Nächstes Jahr werde ich in Deutschland studieren.', en: 'Next year I will study in Germany.' },
+        { de: 'Am Wochenende besuche ich meine Eltern.', en: "I'm visiting my parents at the weekend. (plan + time word → present)" },
+      ],
+    },
+    {
+      heading: 'Passive (present): wird + Partizip II',
+      body:
+        'Use the passive when the action matters, not who does it — typical in news, instructions and signs. Form: **werden** (wird / werden) + **Partizip II** at the end. The doer, if mentioned, comes with **von + Dat**.\n\n' +
+        'Don\'t confuse: Er **wird** Arzt (becomes) · Er **wird** anrufen (future) · Er **wird** angerufen (passive: is being called).',
+      table: {
+        head: ['Active', 'Passive'],
+        rows: [
+          ['Man spricht hier Deutsch.', 'Hier wird Deutsch gesprochen.'],
+          ['Der Postbote bringt die Zeitung.', 'Die Zeitung wird (vom Postboten) gebracht.'],
+          ['Man repariert die Straße.', 'Die Straße wird repariert.'],
+          ['Viele Leute lesen den Artikel.', 'Der Artikel wird von vielen Leuten gelesen.'],
+        ],
+      },
+      examples: [
+        { de: 'Die Nachrichten werden um 20 Uhr gesendet.', en: 'The news is broadcast at 8 pm.' },
+        { de: 'Hier wird gerade gebaut.', en: 'Construction work is going on here.' },
+      ],
+    },
+    {
+      heading: 'Giving your opinion',
+      body: 'Watch the word order: **dass** → verb at the end; **Meiner Meinung nach** fills position 1 → verb comes next. zustimmen takes the **dative**: Ich stimme dir / Ihnen zu.',
+      table: {
+        head: ['Phrase', 'Word order', 'Example'],
+        rows: [
+          ['Ich finde / glaube / denke, dass …', 'verb at end', 'Ich finde, dass Werbung nervt.'],
+          ['Ich finde / glaube, …', 'normal V2', 'Ich glaube, das ist zu teuer.'],
+          ['Meiner Meinung nach …', 'verb next', 'Meiner Meinung nach ist die App zu teuer.'],
+          ['Ich bin der Meinung, dass …', 'verb at end', 'Ich bin der Meinung, dass Zeitungen wichtig sind.'],
+          ['Ich stimme dir / Ihnen zu.', '—', 'I agree with you.'],
+          ['Da hast du recht. / Das stimmt.', '—', "You're right. / That's true."],
+          ['Ich sehe das anders.', '—', 'I see it differently.'],
+        ],
+      },
+    },
+  ],
+  vocab: [
+    { id: 'a2-12-nachricht', de: 'Nachricht', en: 'message; (pl.) the news', pos: 'noun', gender: 'die', plural: 'Nachrichten', example: { de: 'Ich habe dir eine Nachricht geschickt.', en: 'I sent you a message.' } },
+    { id: 'a2-12-sendung', de: 'Sendung', en: 'programme / broadcast (TV, radio)', pos: 'noun', gender: 'die', plural: 'Sendungen', example: { de: 'Die Sendung läuft jeden Freitag.', en: 'The programme is on every Friday.' } },
+    { id: 'a2-12-sender', de: 'Sender', en: 'channel / station', pos: 'noun', gender: 'der', plural: 'Sender', example: { de: 'Auf welchem Sender kommt das Spiel?', en: 'Which channel is the match on?' } },
+    { id: 'a2-12-zeitung', de: 'Zeitung', en: 'newspaper', pos: 'noun', gender: 'die', plural: 'Zeitungen', example: { de: 'Ich lese die Zeitung online.', en: 'I read the newspaper online.' } },
+    { id: 'a2-12-zeitschrift', de: 'Zeitschrift', en: 'magazine', pos: 'noun', gender: 'die', plural: 'Zeitschriften', example: { de: 'Sie kauft jede Woche eine Zeitschrift.', en: 'She buys a magazine every week.' } },
+    { id: 'a2-12-artikel', de: 'Artikel', en: 'article', pos: 'noun', gender: 'der', plural: 'Artikel', example: { de: 'Hast du den Artikel über Berlin gelesen?', en: 'Have you read the article about Berlin?' } },
+    { id: 'a2-12-bericht', de: 'Bericht', en: 'report', pos: 'noun', gender: 'der', plural: 'Berichte', example: { de: 'Im Fernsehen kam ein Bericht über das Unwetter.', en: 'There was a report on TV about the storm.' } },
+    { id: 'a2-12-kommentar', de: 'Kommentar', en: 'comment', pos: 'noun', gender: 'der', plural: 'Kommentare', example: { de: 'Unter dem Video gibt es viele Kommentare.', en: 'There are lots of comments under the video.' } },
+    { id: 'a2-12-werbung', de: 'Werbung', en: 'advertising / adverts', pos: 'noun', gender: 'die', plural: '-', example: { de: 'In der App gibt es zu viel Werbung.', en: 'There is too much advertising in the app.' } },
+    { id: 'a2-12-handy', de: 'Handy', en: 'mobile phone (not "handy"!)', pos: 'noun', gender: 'das', plural: 'Handys', example: { de: 'Mein Handy ist schon wieder leer.', en: 'My phone battery is dead again.' } },
+    { id: 'a2-12-app', de: 'App', en: 'app', pos: 'noun', gender: 'die', plural: 'Apps', example: { de: 'Mit dieser App kann man Tickets kaufen.', en: 'You can buy tickets with this app.' } },
+    { id: 'a2-12-webseite', de: 'Webseite', en: 'website / web page', pos: 'noun', gender: 'die', plural: 'Webseiten', example: { de: 'Die Öffnungszeiten stehen auf der Webseite.', en: 'The opening hours are on the website.' } },
+    { id: 'a2-12-bildschirm', de: 'Bildschirm', en: 'screen', pos: 'noun', gender: 'der', plural: 'Bildschirme', example: { de: 'Ich sitze zu viel vor dem Bildschirm.', en: 'I spend too much time in front of the screen.' } },
+    { id: 'a2-12-passwort', de: 'Passwort', en: 'password', pos: 'noun', gender: 'das', plural: 'Passwörter', example: { de: 'Ich habe mein Passwort vergessen.', en: 'I have forgotten my password.' } },
+    { id: 'a2-12-umfrage', de: 'Umfrage', en: 'survey / poll', pos: 'noun', gender: 'die', plural: 'Umfragen', example: { de: 'Laut einer Umfrage lesen junge Leute weniger Zeitung.', en: 'According to a survey, young people read newspapers less.' } },
+    { id: 'a2-12-meinung', de: 'Meinung', en: 'opinion', pos: 'noun', gender: 'die', plural: 'Meinungen', example: { de: 'Was ist deine Meinung dazu?', en: "What's your opinion on that?" } },
+    { id: 'a2-12-meiner-meinung-nach', de: 'meiner Meinung nach', en: 'in my opinion (verb follows)', pos: 'phrase', example: { de: 'Meiner Meinung nach ist das Buch besser als der Film.', en: 'In my opinion the book is better than the film.' } },
+    { id: 'a2-12-ich-sehe-das-anders', de: 'Ich sehe das anders.', en: 'I see it differently. / I disagree.', pos: 'phrase', example: { de: 'Das ist ein interessanter Punkt, aber ich sehe das anders.', en: "That's an interesting point, but I see it differently." } },
+    { id: 'a2-12-vorteil', de: 'Vorteil', en: 'advantage', pos: 'noun', gender: 'der', plural: 'Vorteile', example: { de: 'Ein Vorteil von E-Books: Sie sind leicht.', en: "One advantage of e-books: they're light." } },
+    { id: 'a2-12-nachteil', de: 'Nachteil', en: 'disadvantage', pos: 'noun', gender: 'der', plural: 'Nachteile', example: { de: 'Der Nachteil ist der hohe Preis.', en: 'The disadvantage is the high price.' } },
+    { id: 'a2-12-thema', de: 'Thema', en: 'topic / subject', pos: 'noun', gender: 'das', plural: 'Themen', example: { de: 'Das Thema ist sehr aktuell.', en: 'The topic is very current.' } },
+    { id: 'a2-12-zukunft', de: 'Zukunft', en: 'future', pos: 'noun', gender: 'die', plural: '-', example: { de: 'In Zukunft werde ich weniger Zeit am Handy verbringen.', en: 'In future I will spend less time on my phone.' } },
+    { id: 'a2-12-herunterladen', de: 'herunterladen', en: 'to download', pos: 'verb', forms: 'lädt herunter · lud herunter · hat heruntergeladen', example: { de: 'Du kannst die App kostenlos herunterladen.', en: 'You can download the app for free.' } },
+    { id: 'a2-12-posten', de: 'posten', en: 'to post (online)', pos: 'verb', forms: 'postet · postete · hat gepostet', example: { de: 'Sie postet jeden Tag ein Foto.', en: 'She posts a photo every day.' } },
+    { id: 'a2-12-teilen', de: 'teilen', en: 'to share', pos: 'verb', example: { de: 'Kannst du den Link mit mir teilen?', en: 'Can you share the link with me?' } },
+    { id: 'a2-12-speichern', de: 'speichern', en: 'to save (a file)', pos: 'verb', example: { de: 'Vergiss nicht, das Dokument zu speichern!', en: "Don't forget to save the document!" } },
+    { id: 'a2-12-loeschen', de: 'löschen', en: 'to delete', pos: 'verb', example: { de: 'Ich habe die Nachricht aus Versehen gelöscht.', en: 'I deleted the message by mistake.' } },
+    { id: 'a2-12-sich-anmelden', de: 'sich anmelden', en: 'to log in / register (für + Akk / zu + Dat = for)', pos: 'verb', forms: 'meldet sich an · meldete sich an · hat sich angemeldet', example: { de: 'Ich habe mich für den Kurs angemeldet.', en: 'I have registered for the course.' } },
+    { id: 'a2-12-einschalten', de: 'einschalten', en: 'to switch on (opp. ausschalten)', pos: 'verb', forms: 'schaltet ein · schaltete ein · hat eingeschaltet', example: { de: 'Schalt mal den Fernseher ein!', en: 'Switch on the TV!' } },
+    { id: 'a2-12-zustimmen', de: 'zustimmen', en: 'to agree (+ Dat)', pos: 'verb', forms: 'stimmt zu · stimmte zu · hat zugestimmt', example: { de: 'Da stimme ich Ihnen zu.', en: 'I agree with you there.' } },
+    { id: 'a2-12-diskutieren', de: 'diskutieren', en: 'to discuss (über + Akk)', pos: 'verb', example: { de: 'Wir haben lange über das Thema diskutiert.', en: 'We discussed the topic for a long time.' } },
+    { id: 'a2-12-vorhaben', de: 'vorhaben', en: 'to plan / intend', pos: 'verb', forms: 'hat vor · hatte vor · hat vorgehabt', example: { de: 'Was hast du am Wochenende vor?', en: 'What are you planning for the weekend?' } },
+    { id: 'a2-12-erscheinen', de: 'erscheinen', en: 'to appear / be published', pos: 'verb', forms: 'erscheint · erschien · ist erschienen', example: { de: 'Die Zeitschrift erscheint jeden Monat.', en: 'The magazine comes out every month.' } },
+    { id: 'a2-12-wahrscheinlich', de: 'wahrscheinlich', en: 'probably', pos: 'adv', example: { de: 'Wir kommen wahrscheinlich etwas später.', en: "We'll probably be a bit late." } },
+    { id: 'a2-12-unbedingt', de: 'unbedingt', en: 'definitely / absolutely (must)', pos: 'adv', example: { de: 'Den Film musst du unbedingt sehen!', en: 'You absolutely have to see that film!' } },
+    { id: 'a2-12-aktuell', de: 'aktuell', en: 'current / up to date (not "actual"!)', pos: 'adj', example: { de: 'Hier findest du die aktuellen Nachrichten.', en: "Here you'll find the latest news." } },
+  ],
+  drills: [
+    { id: 'a2-12-d01', type: 'cloze', text: 'Weißt du, wo der Bahnhof ___?', answers: [['ist']], en: 'Do you know where the station is?', explain: 'Indirect question → verb at the end.' },
+    { id: 'a2-12-d02', type: 'choice', prompt: 'Können Sie mir sagen, ___ der Zug Verspätung hat?', options: ['ob', 'wenn', 'dass', 'als'], correct: 0, explain: 'Yes/no question embedded → ob.' },
+    { id: 'a2-12-d03', type: 'translate', prompt: "I don't know when the film starts.", answers: ['Ich weiß nicht, wann der Film anfängt', 'Ich weiß nicht, wann der Film beginnt'] },
+    { id: 'a2-12-d04', type: 'order', en: 'Do you know if she is coming tomorrow? (informal)', words: ['Weißt', 'du,', 'ob', 'sie', 'morgen', 'kommt'] },
+    { id: 'a2-12-d05', type: 'translate', prompt: 'Can you tell me where the pharmacy is? (formal)', answers: ['Können Sie mir sagen, wo die Apotheke ist?', 'Könnten Sie mir sagen, wo die Apotheke ist?', 'Können Sie mir bitte sagen, wo die Apotheke ist?', 'Könnten Sie mir bitte sagen, wo die Apotheke ist?'] },
+    { id: 'a2-12-d06', type: 'cloze', text: 'Nächstes Jahr ___ ich in Deutschland studieren.', answers: [['werde']], en: 'Next year I will study in Germany.' },
+    { id: 'a2-12-d07', type: 'choice', prompt: '"Ich will nach Berlin fahren." means…', options: ['I want to go to Berlin.', 'I will go to Berlin.', 'I went to Berlin.', 'I would go to Berlin.'], correct: 0, explain: 'False friend: will (wollen) = want. Future = werden.' },
+    { id: 'a2-12-d08', type: 'translate', prompt: 'It will probably rain tomorrow.', answers: ['Morgen wird es wahrscheinlich regnen', 'Es wird morgen wahrscheinlich regnen', 'Wahrscheinlich wird es morgen regnen', 'Morgen regnet es wahrscheinlich', 'Es regnet morgen wahrscheinlich', 'Wahrscheinlich regnet es morgen'], explain: 'Futur I or present + time word — both fine.' },
+    { id: 'a2-12-d09', type: 'translate', prompt: 'Next month I will visit my parents in India.', answers: ['Nächsten Monat werde ich meine Eltern in Indien besuchen', 'Ich werde nächsten Monat meine Eltern in Indien besuchen', 'Nächsten Monat besuche ich meine Eltern in Indien', 'Ich besuche nächsten Monat meine Eltern in Indien'] },
+    { id: 'a2-12-d10', type: 'cloze', text: 'Die Straße ___ gerade repariert.', answers: [['wird']], en: 'The road is being repaired at the moment.', explain: 'Passive: werden + Partizip II.' },
+    { id: 'a2-12-d11', type: 'choice', prompt: 'Die Fotos ___ jeden Tag auf Instagram gepostet.', options: ['werden', 'wird', 'sind', 'haben'], correct: 0, explain: 'Plural subject (die Fotos) → werden.' },
+    { id: 'a2-12-d12', type: 'translate', prompt: 'German is spoken here.', answers: ['Hier wird Deutsch gesprochen', 'Deutsch wird hier gesprochen'] },
+    { id: 'a2-12-d13', type: 'order', en: 'In my opinion the app is too expensive.', words: ['Meiner', 'Meinung', 'nach', 'ist', 'die', 'App', 'zu', 'teuer'], explain: '"Meiner Meinung nach" is position 1 → verb next.' },
+    { id: 'a2-12-d14', type: 'translate', prompt: 'I think that the article is interesting.', answers: ['Ich finde, dass der Artikel interessant ist', 'Ich finde, der Artikel ist interessant', 'Ich finde den Artikel interessant', 'Ich denke, dass der Artikel interessant ist', 'Ich glaube, dass der Artikel interessant ist', 'Ich denke, der Artikel ist interessant', 'Ich glaube, der Artikel ist interessant'] },
+    { id: 'a2-12-d15', type: 'cloze', text: 'Ich stimme ___ zu.', answers: [['dir']], en: 'I agree with you. (informal)', explain: 'zustimmen + Dativ → dir.' },
+    { id: 'a2-12-d16', type: 'translate', prompt: 'I see it differently.', answers: ['Ich sehe das anders', 'Das sehe ich anders', 'Ich sehe es anders'] },
+    { id: 'a2-12-d17', type: 'translate', prompt: 'Have you downloaded the app? (informal)', answers: ['Hast du die App heruntergeladen?', 'Hast du dir die App heruntergeladen?'] },
+    { id: 'a2-12-d18', type: 'cloze', text: 'Ich möchte wissen, wie viel das Ticket ___.', answers: [['kostet']], en: "I'd like to know how much the ticket costs." },
+    { id: 'a2-12-d19', type: 'cloze', text: 'Wir ___ gestern nach Köln ___.', answers: [['sind'], ['gefahren']], en: 'We went to Cologne yesterday.', hint: 'fahren, Perfekt', explain: 'Review – Perfekt: verbs of movement take sein.' },
+    { id: 'a2-12-d20', type: 'choice', prompt: 'Kannst du ___ bitte helfen?', options: ['mir', 'mich', 'ich', 'mein'], correct: 0, explain: 'Review – dative verbs: helfen + Dat → mir.' },
+    { id: 'a2-12-d21', type: 'cloze', text: 'Ich lege das Handy auf ___ Tisch.', answers: [['den']], en: "I'm putting the phone on the table.", explain: 'Review – two-way prepositions: movement (wohin?) → Akk: den Tisch.' },
+    { id: 'a2-12-d22', type: 'cloze', text: 'Sie hat einen ___ Laptop gekauft.', answers: [['neuen']], en: 'She has bought a new laptop.', hint: 'neu', explain: 'Review – adjective endings: einen + masc. Akk → -en.' },
+    { id: 'a2-12-d23', type: 'translate', prompt: 'My new phone is better than my old one.', answers: ['Mein neues Handy ist besser als mein altes', 'Mein neues Handy ist besser als mein altes Handy', 'Mein neues Handy ist besser als das alte'], explain: 'Review – comparative (gut → besser als) + adjective endings (mein neues Handy).' },
+    { id: 'a2-12-d24', type: 'translate', prompt: "I'm learning German because I want to work in Germany.", answers: ['Ich lerne Deutsch, weil ich in Deutschland arbeiten will', 'Ich lerne Deutsch, weil ich in Deutschland arbeiten möchte', 'Weil ich in Deutschland arbeiten will, lerne ich Deutsch', 'Weil ich in Deutschland arbeiten möchte, lerne ich Deutsch'], explain: 'Review – weil: conjugated verb (will) at the very end, after the infinitive.' },
+    { id: 'a2-12-d25', type: 'choice', prompt: 'Ich erinnere ___ gut an den Tag.', options: ['mich', 'mir', 'sich', 'mein'], correct: 0, explain: 'Review – reflexive verbs: sich erinnern an + Akk; no other Akk object → mich.' },
+    { id: 'a2-12-d26', type: 'translate', prompt: 'When I was a child, I wanted to be a pilot.', answers: ['Als ich ein Kind war, wollte ich Pilot werden', 'Als ich Kind war, wollte ich Pilot werden', 'Als Kind wollte ich Pilot werden', 'Ich wollte Pilot werden, als ich ein Kind war', 'Als ich ein Kind war, wollte ich Pilotin werden', 'Als ich Kind war, wollte ich Pilotin werden', 'Als Kind wollte ich Pilotin werden', 'Ich wollte Pilotin werden, als ich ein Kind war'], explain: 'Review – Präteritum (war, wollte) + als for a period in the past.' },
+    { id: 'a2-12-d27', type: 'order', en: "That's the best film I've ever seen.", words: ['Das', 'ist', 'der', 'beste', 'Film,', 'den', 'ich', 'je', 'gesehen', 'habe'], explain: 'Review – superlative (der beste) + relative clause (den, Akk).' },
+  ],
+};
+
+export default unit;

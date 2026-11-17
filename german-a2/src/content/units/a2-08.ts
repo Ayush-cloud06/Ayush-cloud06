@@ -1,0 +1,170 @@
+import type { Unit } from '../types';
+
+const unit: Unit = {
+  id: 'a2-08',
+  level: 'A2',
+  order: 20,
+  title: 'Stories & childhood memories',
+  titleDe: 'Geschichten und Kindheitserinnerungen',
+  goal: 'Tell short stories about your childhood and understand simple written narratives in the Präteritum.',
+  grammar: [
+    {
+      heading: 'Präteritum: sein, haben, werden',
+      body:
+        'For **sein, haben, werden** and the modals, Germans use the Präteritum even when speaking — "Ich bin gewesen" exists but sounds heavy.\n\n' +
+        'Pattern for all Präteritum forms: **ich = er/sie/es** (no ending). The other endings are -st, -t (ihr), -en.',
+      table: {
+        head: ['Person', 'sein', 'haben', 'werden'],
+        rows: [
+          ['ich', 'war', 'hatte', 'wurde'],
+          ['du', 'warst', 'hattest', 'wurdest'],
+          ['er / sie / es', 'war', 'hatte', 'wurde'],
+          ['wir', 'waren', 'hatten', 'wurden'],
+          ['ihr', 'wart', 'hattet', 'wurdet'],
+          ['sie / Sie', 'waren', 'hatten', 'wurden'],
+        ],
+      },
+      examples: [
+        { de: 'Als Kind war ich sehr schüchtern.', en: 'As a child I was very shy.' },
+        { de: 'Wir hatten damals keinen Fernseher.', en: "Back then we didn't have a TV." },
+        { de: 'Er wurde plötzlich ganz rot.', en: 'He suddenly turned bright red.' },
+      ],
+    },
+    {
+      heading: 'Präteritum: modal verbs and es gab',
+      body:
+        'Modals: drop the umlaut, add **-te**. mögen also changes g → ch: **mochte**.\n\n' +
+        'Trap: **mochte** (liked) ≠ **möchte** (would like). **es gab** + Akk = there was / there were (Präteritum of es gibt).',
+      table: {
+        head: ['Infinitive', 'ich / er', 'du', 'wir / sie', 'Meaning'],
+        rows: [
+          ['können', 'konnte', 'konntest', 'konnten', 'could / was able to'],
+          ['müssen', 'musste', 'musstest', 'mussten', 'had to'],
+          ['wollen', 'wollte', 'wolltest', 'wollten', 'wanted to'],
+          ['dürfen', 'durfte', 'durftest', 'durften', 'was allowed to'],
+          ['sollen', 'sollte', 'solltest', 'sollten', 'was supposed to'],
+          ['mögen', 'mochte', 'mochtest', 'mochten', 'liked'],
+          ['es gibt', 'es gab', '–', '–', 'there was / were'],
+        ],
+      },
+      examples: [
+        { de: 'Ich durfte abends nicht lange fernsehen.', en: "I wasn't allowed to watch TV late in the evening." },
+        { de: 'In unserem Dorf gab es nur einen Laden.', en: 'There was only one shop in our village.' },
+      ],
+    },
+    {
+      heading: 'Strong verbs in stories (recognise these)',
+      body:
+        'In books, news and fairy tales, other verbs also appear in the Präteritum. Strong verbs change their vowel and take no -te: **gehen → ging**. Endings like sein: ich ging, du gingst, er ging, wir gingen, ihr gingt, sie gingen.\n\n' +
+        '**Spoken vs. written:** In conversation use the Perfekt (Ich bin nach Hause gegangen). In writing and storytelling the Präteritum is normal (Ich ging nach Hause). Exceptions: sein, haben, modals → Präteritum everywhere.',
+      table: {
+        head: ['Infinitive', 'Präteritum (ich / er)', 'Perfekt', 'Meaning'],
+        rows: [
+          ['gehen', 'ging', 'ist gegangen', 'to go'],
+          ['kommen', 'kam', 'ist gekommen', 'to come'],
+          ['sehen', 'sah', 'hat gesehen', 'to see'],
+          ['fahren', 'fuhr', 'ist gefahren', 'to drive / go'],
+          ['geben', 'gab', 'hat gegeben', 'to give'],
+          ['finden', 'fand', 'hat gefunden', 'to find'],
+          ['sprechen', 'sprach', 'hat gesprochen', 'to speak'],
+          ['stehen', 'stand', 'hat gestanden', 'to stand'],
+          ['laufen', 'lief', 'ist gelaufen', 'to run / walk'],
+          ['nehmen', 'nahm', 'hat genommen', 'to take'],
+          ['wissen', 'wusste', 'hat gewusst', 'to know'],
+          ['denken', 'dachte', 'hat gedacht', 'to think'],
+        ],
+      },
+      examples: [
+        { de: 'Sie nahm ihre Tasche und lief zum Bahnhof.', en: 'She took her bag and ran to the station.' },
+        { de: 'Er wusste nicht, was er sagen sollte.', en: "He didn't know what to say." },
+      ],
+    },
+    {
+      heading: 'als vs. wenn vs. wann',
+      body:
+        'English "when" has three German translations. als and wenn start subordinate clauses (verb at the end); wann asks a question.\n\n' +
+        'Test: **one-off event or period in the past → als**. Happened repeatedly (immer wenn / jedes Mal, wenn) or present/future → **wenn**. Asking for a time → **wann**.',
+      table: {
+        head: ['Word', 'Use', 'Example'],
+        rows: [
+          ['als', 'single event / period in the past', 'Als ich zehn war, sind wir umgezogen.'],
+          ['wenn', 'repeated in the past', 'Immer wenn es regnete, spielten wir Karten.'],
+          ['wenn', 'present / future (also = if)', 'Wenn ich Zeit habe, rufe ich dich an.'],
+          ['wann', 'question (direct or indirect)', 'Wann bist du angekommen? / Ich weiß nicht, wann.'],
+        ],
+      },
+      examples: [
+        { de: 'Als ich nach Hause kam, war niemand da.', en: 'When I got home, nobody was there.' },
+        { de: 'Wenn wir bei Oma waren, durften wir lange aufbleiben.', en: 'Whenever we were at Grandma’s, we were allowed to stay up late.' },
+      ],
+    },
+  ],
+  vocab: [
+    { id: 'a2-08-kindheit', de: 'Kindheit', en: 'childhood', pos: 'noun', gender: 'die', plural: '-', example: { de: 'Ich hatte eine schöne Kindheit.', en: 'I had a nice childhood.' } },
+    { id: 'a2-08-erinnerung', de: 'Erinnerung', en: 'memory (of sth)', pos: 'noun', gender: 'die', plural: 'Erinnerungen', example: { de: 'Ich habe viele Erinnerungen an diesen Sommer.', en: 'I have many memories of that summer.' } },
+    { id: 'a2-08-jugend', de: 'Jugend', en: 'youth / teenage years', pos: 'noun', gender: 'die', plural: '-', example: { de: 'In meiner Jugend habe ich viel Sport gemacht.', en: 'When I was young I did a lot of sport.' } },
+    { id: 'a2-08-kindergarten', de: 'Kindergarten', en: 'nursery school / kindergarten', pos: 'noun', gender: 'der', plural: 'Kindergärten', example: { de: 'Mit drei Jahren kam ich in den Kindergarten.', en: 'I started nursery school at three.' } },
+    { id: 'a2-08-grundschule', de: 'Grundschule', en: 'primary school', pos: 'noun', gender: 'die', plural: 'Grundschulen', example: { de: 'Die Grundschule war direkt neben unserem Haus.', en: 'The primary school was right next to our house.' } },
+    { id: 'a2-08-mitschueler', de: 'Mitschüler', en: 'classmate (m.); f. die Mitschülerin, -nen', pos: 'noun', gender: 'der', plural: 'Mitschüler', example: { de: 'Mit einigen Mitschülern habe ich noch Kontakt.', en: 'I am still in touch with some classmates.' } },
+    { id: 'a2-08-zeugnis', de: 'Zeugnis', en: 'school report / certificate', pos: 'noun', gender: 'das', plural: 'Zeugnisse', example: { de: 'Mein Zeugnis war nicht besonders gut.', en: "My report wasn't particularly good." } },
+    { id: 'a2-08-note', de: 'Note', en: 'grade / mark', pos: 'noun', gender: 'die', plural: 'Noten', example: { de: 'In Mathe hatte ich immer gute Noten.', en: 'I always had good marks in maths.' } },
+    { id: 'a2-08-spielzeug', de: 'Spielzeug', en: 'toy(s)', pos: 'noun', gender: 'das', plural: 'Spielzeuge', example: { de: 'Mein Lieblingsspielzeug war ein rotes Auto.', en: 'My favourite toy was a red car.' } },
+    { id: 'a2-08-spielplatz', de: 'Spielplatz', en: 'playground', pos: 'noun', gender: 'der', plural: 'Spielplätze', example: { de: 'Nach der Schule waren wir oft auf dem Spielplatz.', en: 'After school we were often at the playground.' } },
+    { id: 'a2-08-dorf', de: 'Dorf', en: 'village', pos: 'noun', gender: 'das', plural: 'Dörfer', example: { de: 'Meine Großeltern wohnten in einem kleinen Dorf.', en: 'My grandparents lived in a small village.' } },
+    { id: 'a2-08-bauernhof', de: 'Bauernhof', en: 'farm', pos: 'noun', gender: 'der', plural: 'Bauernhöfe', example: { de: 'Im Sommer waren wir oft auf dem Bauernhof.', en: 'In summer we were often at the farm.' } },
+    { id: 'a2-08-geschichte', de: 'Geschichte', en: 'story / history', pos: 'noun', gender: 'die', plural: 'Geschichten', example: { de: 'Opa hat uns jeden Abend eine Geschichte erzählt.', en: 'Grandpa told us a story every evening.' } },
+    { id: 'a2-08-maerchen', de: 'Märchen', en: 'fairy tale', pos: 'noun', gender: 'das', plural: 'Märchen', example: { de: 'Kennst du das Märchen von Hänsel und Gretel?', en: 'Do you know the fairy tale of Hansel and Gretel?' } },
+    { id: 'a2-08-abenteuer', de: 'Abenteuer', en: 'adventure', pos: 'noun', gender: 'das', plural: 'Abenteuer', example: { de: 'Die Reise war ein echtes Abenteuer.', en: 'The trip was a real adventure.' } },
+    { id: 'a2-08-unfall', de: 'Unfall', en: 'accident', pos: 'noun', gender: 'der', plural: 'Unfälle', example: { de: 'Mit acht hatte ich einen Unfall mit dem Fahrrad.', en: 'At eight I had a bike accident.' } },
+    { id: 'a2-08-es-gab', de: 'es gab', en: 'there was / there were (+ Akk)', pos: 'phrase', forms: 'es gibt · es gab · es hat gegeben', example: { de: 'Damals gab es noch keine Handys.', en: 'Back then there were no mobile phones yet.' } },
+    { id: 'a2-08-frueher', de: 'früher', en: 'in the past / used to', pos: 'adv', example: { de: 'Früher habe ich in Delhi gewohnt.', en: 'I used to live in Delhi.' } },
+    { id: 'a2-08-damals', de: 'damals', en: 'back then / at that time', pos: 'adv', example: { de: 'Damals war alles anders.', en: 'Back then everything was different.' } },
+    { id: 'a2-08-ploetzlich', de: 'plötzlich', en: 'suddenly', pos: 'adv', example: { de: 'Plötzlich ging das Licht aus.', en: 'Suddenly the light went out.' } },
+    { id: 'a2-08-schliesslich', de: 'schließlich', en: 'finally / in the end', pos: 'adv', example: { de: 'Schließlich fanden wir den Weg.', en: 'In the end we found the way.' } },
+    { id: 'a2-08-einmal', de: 'einmal', en: 'once / one time', pos: 'adv', example: { de: 'Einmal haben wir im Garten gezeltet.', en: 'Once we camped in the garden.' } },
+    { id: 'a2-08-als', de: 'als', en: 'when (single event in the past)', pos: 'conj', example: { de: 'Als ich klein war, hatte ich Angst vor Hunden.', en: 'When I was little, I was afraid of dogs.' } },
+    { id: 'a2-08-streng', de: 'streng', en: 'strict', pos: 'adj', example: { de: 'Unsere Lehrerin war sehr streng.', en: 'Our teacher was very strict.' } },
+    { id: 'a2-08-frech', de: 'frech', en: 'cheeky / naughty', pos: 'adj', example: { de: 'Als Kind war mein Bruder ziemlich frech.', en: 'As a child my brother was quite cheeky.' } },
+    { id: 'a2-08-schuechtern', de: 'schüchtern', en: 'shy', pos: 'adj', example: { de: 'Sie war früher sehr schüchtern.', en: 'She used to be very shy.' } },
+    { id: 'a2-08-passieren', de: 'passieren', en: 'to happen', pos: 'verb', forms: 'passiert · passierte · ist passiert', example: { de: 'Was ist passiert?', en: 'What happened?' } },
+    { id: 'a2-08-erzaehlen', de: 'erzählen', en: 'to tell (a story)', pos: 'verb', forms: 'erzählt · erzählte · hat erzählt', example: { de: 'Erzähl mal von deiner Kindheit!', en: 'Tell me about your childhood!' } },
+    { id: 'a2-08-aufwachsen', de: 'aufwachsen', en: 'to grow up', pos: 'verb', forms: 'wächst auf · wuchs auf · ist aufgewachsen', example: { de: 'Ich bin in Bangalore aufgewachsen.', en: 'I grew up in Bangalore.' } },
+    { id: 'a2-08-umziehen', de: 'umziehen', en: 'to move (house)', pos: 'verb', forms: 'zieht um · zog um · ist umgezogen', example: { de: 'Mit zwölf sind wir nach Leipzig umgezogen.', en: 'At twelve we moved to Leipzig.' } },
+    { id: 'a2-08-klettern', de: 'klettern', en: 'to climb', pos: 'verb', forms: 'klettert · kletterte · ist geklettert', example: { de: 'Wir sind oft auf Bäume geklettert.', en: 'We often climbed trees.' } },
+    { id: 'a2-08-fallen', de: 'fallen', en: 'to fall', pos: 'verb', forms: 'fällt · fiel · ist gefallen', example: { de: 'Er fiel vom Fahrrad.', en: 'He fell off his bike.' } },
+    { id: 'a2-08-vergessen', de: 'vergessen', en: 'to forget', pos: 'verb', forms: 'vergisst · vergaß · hat vergessen', example: { de: 'Diesen Tag habe ich nie vergessen.', en: 'I have never forgotten that day.' } },
+    { id: 'a2-08-verlieren', de: 'verlieren', en: 'to lose', pos: 'verb', forms: 'verliert · verlor · hat verloren', example: { de: 'Ich habe meinen Schlüssel verloren.', en: 'I have lost my key.' } },
+    { id: 'a2-08-bekommen', de: 'bekommen', en: 'to get / receive (not "become"!)', pos: 'verb', forms: 'bekommt · bekam · hat bekommen', example: { de: 'Zum Geburtstag bekam ich ein Fahrrad.', en: 'I got a bike for my birthday.' } },
+    { id: 'a2-08-sterben', de: 'sterben', en: 'to die', pos: 'verb', forms: 'stirbt · starb · ist gestorben', example: { de: 'Mein Opa starb, als ich sechs war.', en: 'My grandpa died when I was six.' } },
+  ],
+  drills: [
+    { id: 'a2-08-d01', type: 'cloze', text: 'Als Kind ___ ich sehr schüchtern.', answers: [['war']], en: 'As a child I was very shy.' },
+    { id: 'a2-08-d02', type: 'cloze', text: 'Wir ___ damals einen Hund.', answers: [['hatten']], en: 'We had a dog back then.' },
+    { id: 'a2-08-d03', type: 'choice', prompt: 'Du ___ gestern keine Zeit.', options: ['hattest', 'hattet', 'hatte', 'hast'], correct: 0 },
+    { id: 'a2-08-d04', type: 'cloze', text: 'Früher ___ ich nicht schwimmen.', answers: [['konnte']], en: "I couldn't swim before.", explain: 'Modals in the past: no umlaut + -te (können → konnte).' },
+    { id: 'a2-08-d05', type: 'choice', prompt: 'Als Kind ___ ich keinen Spinat.', options: ['mochte', 'möchte', 'mag', 'mochtet'], correct: 0, explain: 'mochte = liked (Präteritum of mögen). möchte = would like.' },
+    { id: 'a2-08-d06', type: 'translate', prompt: 'I had to go to bed early.', answers: ['Ich musste früh ins Bett gehen', 'Ich musste früh ins Bett', 'Ich musste früh schlafen gehen'] },
+    { id: 'a2-08-d07', type: 'translate', prompt: 'She wanted to become a doctor.', answers: ['Sie wollte Ärztin werden'], explain: 'No article with professions; "wollte" = wanted (not "will").' },
+    { id: 'a2-08-d08', type: 'order', en: 'Did you have to work yesterday? (informal)', words: ['Musstest', 'du', 'gestern', 'arbeiten'] },
+    { id: 'a2-08-d09', type: 'translate', prompt: 'There was a big playground in our village.', answers: ['In unserem Dorf gab es einen großen Spielplatz', 'Es gab einen großen Spielplatz in unserem Dorf'], explain: 'es gab + Akk → einen großen Spielplatz.' },
+    { id: 'a2-08-d10', type: 'order', en: 'Back then there was no internet.', words: ['Damals', 'gab', 'es', 'kein', 'Internet'] },
+    { id: 'a2-08-d11', type: 'cloze', text: 'Wir ___ nicht fernsehen, weil wir Hausaufgaben machen ___.', answers: [['durften'], ['mussten']], en: "We weren't allowed to watch TV because we had to do homework." },
+    { id: 'a2-08-d12', type: 'translate', prompt: 'My father could speak three languages.', answers: ['Mein Vater konnte drei Sprachen sprechen', 'Mein Vater konnte drei Sprachen'] },
+    { id: 'a2-08-d13', type: 'translate', prompt: 'He became very angry.', answers: ['Er wurde sehr wütend', 'Er wurde sehr böse', 'Er ist sehr wütend geworden'], explain: 'werden → wurde. English "became" ≠ German "bekam" (got).' },
+    { id: 'a2-08-d14', type: 'choice', prompt: '"Er ging nach Hause." means…', options: ['He goes home.', 'He went home.', 'He will go home.', 'He wants to go home.'], correct: 1 },
+    { id: 'a2-08-d15', type: 'choice', prompt: '"Wir fanden den Schlüssel nicht." – infinitive of "fanden"?', options: ['finden', 'fahren', 'fallen', 'fangen'], correct: 0 },
+    { id: 'a2-08-d16', type: 'cloze', text: 'Plötzlich ___ ein großer Hund vor der Tür.', answers: [['stand']], en: 'Suddenly a big dog was standing in front of the door.', hint: 'stehen, Präteritum' },
+    { id: 'a2-08-d17', type: 'cloze', text: '___ ich zehn war, sind wir nach Hamburg umgezogen.', answers: [['Als']], en: 'When I was ten, we moved to Hamburg.', explain: 'One event in the past → als.' },
+    { id: 'a2-08-d18', type: 'choice', prompt: 'Immer ___ ich bei Oma war, haben wir Kuchen gebacken.', options: ['als', 'wenn', 'wann', 'ob'], correct: 1, explain: 'Repeated in the past (immer) → wenn.' },
+    { id: 'a2-08-d19', type: 'cloze', text: 'Ich weiß nicht mehr, ___ das passiert ist.', answers: [['wann']], en: "I don't remember any more when that happened.", explain: 'Asking about a time (here an indirect question) → wann.' },
+    { id: 'a2-08-d20', type: 'translate', prompt: "I didn't know that.", answers: ['Das wusste ich nicht', 'Ich wusste das nicht'] },
+    { id: 'a2-08-d21', type: 'order', en: "When I came home, my mother wasn't there.", words: ['Als', 'ich', 'nach', 'Hause', 'kam,', 'war', 'meine', 'Mutter', 'nicht', 'da'], explain: 'als-clause first → the main clause starts with the verb (war).' },
+    { id: 'a2-08-d22', type: 'translate', prompt: 'When I was a child, I lived in Pune.', answers: ['Als ich ein Kind war, habe ich in Pune gewohnt', 'Als ich ein Kind war, wohnte ich in Pune', 'Als ich Kind war, habe ich in Pune gewohnt', 'Als ich Kind war, wohnte ich in Pune', 'Ich habe in Pune gewohnt, als ich ein Kind war', 'Ich wohnte in Pune, als ich ein Kind war', 'Ich habe in Pune gewohnt, als ich Kind war', 'Ich wohnte in Pune, als ich Kind war', 'Als Kind habe ich in Pune gewohnt', 'Als Kind wohnte ich in Pune'] },
+    { id: 'a2-08-d23', type: 'translate', prompt: 'Did you have a dog back then? (informal)', answers: ['Hattest du damals einen Hund?', 'Hattest du früher einen Hund?'] },
+    { id: 'a2-08-d24', type: 'order', en: "I couldn't come because I was ill.", words: ['Ich', 'konnte', 'nicht', 'kommen,', 'weil', 'ich', 'krank', 'war'] },
+    { id: 'a2-08-d25', type: 'translate', prompt: 'Whenever my grandfather came, he told a story.', answers: ['Wenn mein Großvater kam, erzählte er eine Geschichte', 'Immer wenn mein Großvater kam, erzählte er eine Geschichte', 'Jedes Mal, wenn mein Großvater kam, erzählte er eine Geschichte', 'Wenn mein Opa kam, erzählte er eine Geschichte', 'Immer wenn mein Opa kam, erzählte er eine Geschichte', 'Wenn mein Großvater gekommen ist, hat er eine Geschichte erzählt', 'Immer wenn mein Großvater gekommen ist, hat er eine Geschichte erzählt'], explain: 'Repeated → wenn (not als).' },
+    { id: 'a2-08-d26', type: 'translate', prompt: 'We went to the cinema yesterday. (spoken, use Perfekt)', answers: ['Wir sind gestern ins Kino gegangen', 'Gestern sind wir ins Kino gegangen'], explain: 'Speaking → Perfekt (sind … gegangen). "Wir gingen ins Kino" is written style.' },
+  ],
+};
+
+export default unit;

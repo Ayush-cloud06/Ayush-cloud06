@@ -1,0 +1,137 @@
+import type { Unit } from '../types';
+
+const unit: Unit = {
+  id: 'a2-10',
+  level: 'A2',
+  order: 22,
+  title: 'Health & the doctor',
+  titleDe: 'Gesundheit und beim Arzt',
+  goal: 'Describe symptoms, deal with the doctor and pharmacy, and link ideas with deshalb, trotzdem, obwohl and paired connectors.',
+  grammar: [
+    {
+      heading: 'Saying what hurts',
+      body:
+        'Two patterns: **Ich habe + …schmerzen** (Kopfschmerzen, Bauchschmerzen, Rückenschmerzen) or **(Dat) + tut / tun weh**: Mir tut der Kopf weh. Plural body parts → tun: Mir tun die Füße weh.\n\n' +
+        'Trap: German uses the definite article + dative person, not "my": Mir tut **der** Rücken weh (lit. "to me hurts the back").',
+      table: {
+        head: ['Pattern', 'Example', 'English'],
+        rows: [
+          ['… schmerzen haben', 'Ich habe Halsschmerzen.', 'I have a sore throat.'],
+          ['Dat + tut weh', 'Mir tut der Bauch weh.', 'My stomach hurts.'],
+          ['Dat + tun weh', 'Ihm tun die Knie weh.', 'His knees hurt.'],
+          ['Ich bin erkältet.', 'Ich habe eine Erkältung.', 'I have a cold.'],
+          ['Mir ist übel / schlecht.', 'Mir ist seit heute Morgen übel.', 'I feel sick.'],
+        ],
+      },
+    },
+    {
+      heading: 'deshalb / trotzdem vs. weil / obwohl',
+      body:
+        'Same idea, different word order. **deshalb, deswegen, darum** (= therefore, so) and **trotzdem** (= nevertheless, still) are adverbs: they take position 1 and the **verb comes next** (inversion), or they sit in the middle of the clause.\n\n' +
+        '**weil** and **obwohl** are subordinating: **verb to the end**. Trap for English speakers: "so I stay" is NOT "deshalb ich bleibe".',
+      table: {
+        head: ['Connector', 'Meaning', 'Word order', 'Example'],
+        rows: [
+          ['weil', 'because (reason)', 'verb at end', '…, weil ich Fieber habe.'],
+          ['deshalb / deswegen / darum', 'that’s why / so (result)', 'verb right after', 'Ich habe Fieber, deshalb bleibe ich zu Hause.'],
+          ['obwohl', 'although', 'verb at end', 'Obwohl ich Fieber habe, gehe ich zur Arbeit.'],
+          ['trotzdem', 'nevertheless / anyway', 'verb right after', 'Ich habe Fieber. Trotzdem gehe ich zur Arbeit.'],
+        ],
+      },
+      examples: [
+        { de: 'Ich bin erkältet, deswegen trinke ich viel Tee.', en: "I've got a cold, so I'm drinking lots of tea." },
+        { de: 'Es regnet, aber wir gehen trotzdem spazieren.', en: "It's raining, but we're going for a walk anyway." },
+        { de: 'Obwohl er krank ist, arbeitet er.', en: 'Although he is ill, he is working.' },
+      ],
+    },
+    {
+      heading: 'aber vs. sondern, and paired connectors',
+      body:
+        '**sondern** (= but rather) only after a negation (nicht / kein), when you **correct** the first part. **aber** (= but / however) adds a contrast without correcting.\n\n' +
+        'aber, sondern, oder, und don\'t change word order (position 0). In entweder … oder, entweder can be position 0 or 1: Entweder du gehst … / Entweder gehst du …',
+      table: {
+        head: ['Connector', 'Meaning', 'Example'],
+        rows: [
+          ['nicht …, sondern …', 'not … but (rather) …', 'Ich habe keine Grippe, sondern nur eine Erkältung.'],
+          ['…, aber …', 'but / however', 'Ich bin müde, aber ich kann nicht schlafen.'],
+          ['nicht nur …, sondern auch …', 'not only … but also …', 'Ich habe nicht nur Husten, sondern auch Fieber.'],
+          ['entweder … oder …', 'either … or …', 'Entweder du nimmst die Tabletten oder du gehst zum Arzt.'],
+          ['sowohl … als auch …', 'both … and …', 'Ich habe sowohl Husten als auch Schnupfen.'],
+        ],
+      },
+      examples: [
+        { de: 'Das Medikament ist nicht billig, aber es hilft.', en: "The medicine isn't cheap, but it helps." },
+        { de: 'Er ist nicht krank, sondern nur müde.', en: "He isn't ill, just tired." },
+      ],
+    },
+  ],
+  vocab: [
+    { id: 'a2-10-koerper', de: 'Körper', en: 'body', pos: 'noun', gender: 'der', plural: 'Körper', example: { de: 'Sport ist gut für Körper und Kopf.', en: 'Sport is good for body and mind.' } },
+    { id: 'a2-10-hals', de: 'Hals', en: 'throat / neck', pos: 'noun', gender: 'der', plural: 'Hälse', example: { de: 'Mir tut der Hals weh.', en: 'My throat hurts.' } },
+    { id: 'a2-10-ruecken', de: 'Rücken', en: 'back', pos: 'noun', gender: 'der', plural: 'Rücken', example: { de: 'Vom Sitzen tut mir der Rücken weh.', en: 'My back hurts from sitting.' } },
+    { id: 'a2-10-bauch', de: 'Bauch', en: 'stomach / belly', pos: 'noun', gender: 'der', plural: 'Bäuche', example: { de: 'Ich habe Bauchschmerzen.', en: 'I have a stomach ache.' } },
+    { id: 'a2-10-zahn', de: 'Zahn', en: 'tooth', pos: 'noun', gender: 'der', plural: 'Zähne', example: { de: 'Ich habe Zahnschmerzen.', en: 'I have toothache.' } },
+    { id: 'a2-10-knie', de: 'Knie', en: 'knee', pos: 'noun', gender: 'das', plural: 'Knie', example: { de: 'Beim Joggen tun mir die Knie weh.', en: 'My knees hurt when I jog.' } },
+    { id: 'a2-10-schulter', de: 'Schulter', en: 'shoulder', pos: 'noun', gender: 'die', plural: 'Schultern', example: { de: 'Meine linke Schulter tut weh.', en: 'My left shoulder hurts.' } },
+    { id: 'a2-10-schmerz', de: 'Schmerz', en: 'pain (usu. plural: Kopfschmerzen, Rückenschmerzen…)', pos: 'noun', gender: 'der', plural: 'Schmerzen', example: { de: 'Haben Sie Schmerzen?', en: 'Are you in pain?' } },
+    { id: 'a2-10-kopfschmerzen-haben', de: 'Kopfschmerzen haben', en: 'to have a headache', pos: 'phrase', example: { de: 'Ich habe seit gestern Kopfschmerzen.', en: "I've had a headache since yesterday." } },
+    { id: 'a2-10-fieber', de: 'Fieber', en: 'fever / temperature', pos: 'noun', gender: 'das', plural: '-', example: { de: 'Das Kind hat hohes Fieber.', en: 'The child has a high temperature.' } },
+    { id: 'a2-10-husten', de: 'Husten', en: 'cough', pos: 'noun', gender: 'der', plural: '-', example: { de: 'Ich habe einen starken Husten.', en: 'I have a bad cough.' } },
+    { id: 'a2-10-schnupfen', de: 'Schnupfen', en: 'runny nose / head cold', pos: 'noun', gender: 'der', plural: '-', example: { de: 'Im Winter habe ich oft Schnupfen.', en: 'In winter I often have a runny nose.' } },
+    { id: 'a2-10-erkaeltung', de: 'Erkältung', en: 'cold (illness)', pos: 'noun', gender: 'die', plural: 'Erkältungen', example: { de: 'Gegen eine Erkältung hilft Tee mit Honig.', en: 'Tea with honey helps against a cold.' } },
+    { id: 'a2-10-grippe', de: 'Grippe', en: 'flu', pos: 'noun', gender: 'die', plural: '-', example: { de: 'Sie liegt mit Grippe im Bett.', en: "She's in bed with flu." } },
+    { id: 'a2-10-erkaeltet', de: 'erkältet', en: 'having a cold (ich bin erkältet)', pos: 'adj', example: { de: 'Ich bin schon wieder erkältet.', en: "I've got a cold again." } },
+    { id: 'a2-10-gesund', de: 'gesund', en: 'healthy', pos: 'adj', forms: 'gesünder · am gesündesten', example: { de: 'Obst ist gesund.', en: 'Fruit is healthy.' } },
+    { id: 'a2-10-uebel', de: 'übel', en: 'sick / nauseous (mir ist übel)', pos: 'adj', example: { de: 'Mir ist übel, ich glaube, ich habe etwas Falsches gegessen.', en: 'I feel sick, I think I ate something bad.' } },
+    { id: 'a2-10-praxis', de: 'Praxis', en: "doctor's surgery / practice", pos: 'noun', gender: 'die', plural: 'Praxen', example: { de: 'Die Praxis ist am Mittwochnachmittag geschlossen.', en: 'The surgery is closed on Wednesday afternoon.' } },
+    { id: 'a2-10-sprechstunde', de: 'Sprechstunde', en: 'consulting hours / office hours', pos: 'noun', gender: 'die', plural: 'Sprechstunden', example: { de: 'Die Sprechstunde beginnt um acht Uhr.', en: 'Consulting hours start at eight.' } },
+    { id: 'a2-10-zahnarzt', de: 'Zahnarzt', en: 'dentist (m.); f. die Zahnärztin, -nen', pos: 'noun', gender: 'der', plural: 'Zahnärzte', example: { de: 'Ich habe morgen einen Termin beim Zahnarzt.', en: "I've got a dentist appointment tomorrow." } },
+    { id: 'a2-10-krankenhaus', de: 'Krankenhaus', en: 'hospital', pos: 'noun', gender: 'das', plural: 'Krankenhäuser', example: { de: 'Er musste ins Krankenhaus.', en: 'He had to go to hospital.' } },
+    { id: 'a2-10-notfall', de: 'Notfall', en: 'emergency', pos: 'noun', gender: 'der', plural: 'Notfälle', example: { de: 'Im Notfall rufen Sie die 112 an.', en: 'In an emergency, call 112.' } },
+    { id: 'a2-10-krankenkasse', de: 'Krankenkasse', en: 'health insurance (company)', pos: 'noun', gender: 'die', plural: 'Krankenkassen', example: { de: 'Bei welcher Krankenkasse sind Sie versichert?', en: 'Which health insurance are you with?' } },
+    { id: 'a2-10-rezept', de: 'Rezept', en: 'prescription; recipe', pos: 'noun', gender: 'das', plural: 'Rezepte', example: { de: 'Für dieses Medikament brauchen Sie ein Rezept.', en: 'You need a prescription for this medicine.' } },
+    { id: 'a2-10-medikament', de: 'Medikament', en: 'medicine / medication', pos: 'noun', gender: 'das', plural: 'Medikamente', example: { de: 'Nehmen Sie das Medikament dreimal am Tag.', en: 'Take the medicine three times a day.' } },
+    { id: 'a2-10-tablette', de: 'Tablette', en: 'tablet / pill', pos: 'noun', gender: 'die', plural: 'Tabletten', example: { de: 'Ich habe eine Tablette gegen Kopfschmerzen genommen.', en: 'I took a tablet for my headache.' } },
+    { id: 'a2-10-apotheke', de: 'Apotheke', en: 'pharmacy / chemist', pos: 'noun', gender: 'die', plural: 'Apotheken', example: { de: 'Die Apotheke ist gleich um die Ecke.', en: 'The pharmacy is just round the corner.' } },
+    { id: 'a2-10-wehtun', de: 'wehtun', en: 'to hurt (Dat + tut weh)', pos: 'verb', forms: 'tut weh · tat weh · hat wehgetan', example: { de: 'Tut dir das Bein noch weh?', en: 'Does your leg still hurt?' } },
+    { id: 'a2-10-untersuchen', de: 'untersuchen', en: 'to examine', pos: 'verb', forms: 'untersucht · untersuchte · hat untersucht', example: { de: 'Die Ärztin hat mich gründlich untersucht.', en: 'The doctor examined me thoroughly.' } },
+    { id: 'a2-10-verschreiben', de: 'verschreiben', en: 'to prescribe', pos: 'verb', forms: 'verschreibt · verschrieb · hat verschrieben', example: { de: 'Der Arzt hat mir Tabletten verschrieben.', en: 'The doctor prescribed me tablets.' } },
+    { id: 'a2-10-krankschreiben', de: 'krankschreiben', en: 'to sign sb off sick', pos: 'verb', forms: 'schreibt krank · schrieb krank · hat krankgeschrieben', example: { de: 'Ich bin bis Freitag krankgeschrieben.', en: "I'm signed off sick until Friday." } },
+    { id: 'a2-10-einnehmen', de: 'einnehmen', en: 'to take (medicine)', pos: 'verb', forms: 'nimmt ein · nahm ein · hat eingenommen', example: { de: 'Nehmen Sie die Tabletten nach dem Essen ein.', en: 'Take the tablets after meals.' } },
+    { id: 'a2-10-sich-ausruhen', de: 'sich ausruhen', en: 'to rest', pos: 'verb', forms: 'ruht sich aus · ruhte sich aus · hat sich ausgeruht', example: { de: 'Sie sollten sich ein paar Tage ausruhen.', en: 'You should rest for a few days.' } },
+    { id: 'a2-10-deshalb', de: 'deshalb', en: "that's why / so (= deswegen, darum; verb follows)", pos: 'adv', example: { de: 'Ich bin krank, deshalb komme ich nicht.', en: "I'm ill, so I'm not coming." } },
+    { id: 'a2-10-trotzdem', de: 'trotzdem', en: 'nevertheless / anyway (verb follows)', pos: 'adv', example: { de: 'Er war müde. Trotzdem hat er weitergearbeitet.', en: 'He was tired. He kept working anyway.' } },
+    { id: 'a2-10-obwohl', de: 'obwohl', en: 'although (verb to the end)', pos: 'conj', example: { de: 'Obwohl ich krank war, bin ich zur Uni gegangen.', en: 'Although I was ill, I went to uni.' } },
+    { id: 'a2-10-sondern', de: 'sondern', en: 'but (rather) — after a negation', pos: 'conj', example: { de: 'Das ist kein Tee, sondern Kaffee.', en: "That isn't tea, it's coffee." } },
+  ],
+  drills: [
+    { id: 'a2-10-d01', type: 'translate', prompt: 'I have a headache.', answers: ['Ich habe Kopfschmerzen', 'Ich habe Kopfweh', 'Mir tut der Kopf weh', 'Der Kopf tut mir weh'] },
+    { id: 'a2-10-d02', type: 'cloze', text: 'Mir tut der Rücken ___.', answers: [['weh']], en: 'My back hurts.' },
+    { id: 'a2-10-d03', type: 'translate', prompt: 'My throat hurts.', answers: ['Mir tut der Hals weh', 'Mein Hals tut weh', 'Der Hals tut mir weh', 'Ich habe Halsschmerzen'] },
+    { id: 'a2-10-d04', type: 'choice', prompt: 'Ich bin erkältet, ___ bleibe ich zu Hause.', options: ['deshalb', 'obwohl', 'weil', 'sondern'], correct: 0, explain: 'The verb (bleibe) comes right after the gap → it must be an adverb like deshalb.' },
+    { id: 'a2-10-d05', type: 'order', en: "I've got a cold, so I'm staying in bed.", words: ['Ich', 'bin', 'erkältet,', 'deshalb', 'bleibe', 'ich', 'im', 'Bett'], explain: 'deshalb in position 1 → verb next, then subject.' },
+    { id: 'a2-10-d06', type: 'cloze', text: 'Sie hat Fieber. ___ geht sie zur Arbeit.', answers: [['Trotzdem']], en: 'She has a temperature. She goes to work anyway.' },
+    { id: 'a2-10-d07', type: 'cloze', text: '___ sie Fieber hat, geht sie zur Arbeit.', answers: [['Obwohl']], en: 'Although she has a temperature, she goes to work.', explain: 'Verb at the end of the first clause (hat) → subordinating conjunction obwohl.' },
+    { id: 'a2-10-d08', type: 'choice', prompt: 'Er ist nicht krank, ___ nur müde.', options: ['sondern', 'aber', 'oder', 'deshalb'], correct: 0, explain: 'Negation + correction → sondern.' },
+    { id: 'a2-10-d09', type: 'choice', prompt: 'Das Medikament ist teuer, ___ es hilft.', options: ['aber', 'sondern', 'obwohl', 'deshalb'], correct: 0, explain: 'No negation being corrected → aber. (obwohl would need the verb at the end.)' },
+    { id: 'a2-10-d10', type: 'translate', prompt: "I'm going to the doctor because my back hurts.", answers: ['Ich gehe zum Arzt, weil mir der Rücken wehtut', 'Ich gehe zum Arzt, weil mein Rücken wehtut', 'Ich gehe zur Ärztin, weil mir der Rücken wehtut', 'Ich gehe zur Ärztin, weil mein Rücken wehtut', 'Ich gehe zum Arzt, weil der Rücken mir wehtut'], explain: 'weil → verb at the end; separable wehtun is written as one word there.' },
+    { id: 'a2-10-d11', type: 'translate', prompt: "My back hurts, so I'm going to the doctor.", answers: ['Mir tut der Rücken weh, deshalb gehe ich zum Arzt', 'Mir tut der Rücken weh, deswegen gehe ich zum Arzt', 'Mir tut der Rücken weh, darum gehe ich zum Arzt', 'Mein Rücken tut weh, deshalb gehe ich zum Arzt', 'Mein Rücken tut weh, deswegen gehe ich zum Arzt', 'Mein Rücken tut weh, darum gehe ich zum Arzt', 'Mir tut der Rücken weh, deshalb gehe ich zur Ärztin', 'Mein Rücken tut weh, deshalb gehe ich zur Ärztin', 'Mir tut der Rücken weh, ich gehe deshalb zum Arzt', 'Mein Rücken tut weh, ich gehe deshalb zum Arzt'] },
+    { id: 'a2-10-d12', type: 'cloze', text: 'Ich nehme keine Tabletten, ___ trinke viel Tee.', answers: [['sondern']], en: "I'm not taking tablets; instead I'm drinking lots of tea." },
+    { id: 'a2-10-d13', type: 'cloze', text: 'Ich habe nicht nur Husten, ___ ___ Fieber.', answers: [['sondern'], ['auch']], en: 'I have not only a cough but also a temperature.' },
+    { id: 'a2-10-d14', type: 'cloze', text: '___ du nimmst die Tabletten, ___ du gehst ins Krankenhaus.', answers: [['Entweder'], ['oder']], en: 'Either you take the tablets or you go to hospital.' },
+    { id: 'a2-10-d15', type: 'translate', prompt: 'I have both a cough and a runny nose.', answers: ['Ich habe sowohl Husten als auch Schnupfen', 'Ich habe sowohl einen Husten als auch einen Schnupfen'] },
+    { id: 'a2-10-d16', type: 'choice', prompt: 'Which sentence is correct?', options: ['Obwohl es mir nicht gut geht, gehe ich zur Arbeit.', 'Obwohl es mir nicht gut geht, ich gehe zur Arbeit.', 'Obwohl geht es mir nicht gut, gehe ich zur Arbeit.', 'Trotzdem es mir nicht gut geht, gehe ich zur Arbeit.'], correct: 0, explain: 'obwohl-clause: verb last. It counts as position 1, so the main clause starts with the verb.' },
+    { id: 'a2-10-d17', type: 'order', en: 'Although he is ill, he is going to work.', words: ['Obwohl', 'er', 'krank', 'ist,', 'geht', 'er', 'zur', 'Arbeit'] },
+    { id: 'a2-10-d18', type: 'translate', prompt: "I'm tired, but I can't sleep.", answers: ['Ich bin müde, aber ich kann nicht schlafen', 'Ich bin müde, kann aber nicht schlafen'] },
+    { id: 'a2-10-d19', type: 'translate', prompt: "It's raining. Nevertheless we're going for a walk.", answers: ['Es regnet. Trotzdem gehen wir spazieren', 'Es regnet, trotzdem gehen wir spazieren', 'Es regnet. Wir gehen trotzdem spazieren', 'Es regnet, aber wir gehen trotzdem spazieren', 'Es regnet, wir gehen trotzdem spazieren'], explain: 'trotzdem in position 1 → verb next (gehen wir).' },
+    { id: 'a2-10-d20', type: 'cloze', text: 'Ich war gestern beim Arzt. Er hat mich für drei Tage ___.', answers: [['krankgeschrieben']], en: 'I was at the doctor yesterday. He signed me off sick for three days.' },
+    { id: 'a2-10-d21', type: 'translate', prompt: 'You should rest. (informal)', answers: ['Du solltest dich ausruhen'], explain: 'Advice → sollte; sich ausruhen is reflexive (dich).' },
+    { id: 'a2-10-d22', type: 'translate', prompt: 'The doctor (m.) examined me and prescribed me a medicine.', answers: ['Der Arzt hat mich untersucht und mir ein Medikament verschrieben', 'Der Arzt untersuchte mich und verschrieb mir ein Medikament'], explain: 'untersuchen + Akk (mich); verschreiben + Dat person (mir) + Akk thing.' },
+    { id: 'a2-10-d23', type: 'order', en: "She didn't go to the pharmacy but to the hospital.", words: ['Sie', 'ist', 'nicht', 'zur', 'Apotheke', 'gegangen,', 'sondern', 'ins', 'Krankenhaus'] },
+    { id: 'a2-10-d24', type: 'translate', prompt: 'Either you go to the doctor or you stay at home. (informal)', answers: ['Entweder gehst du zum Arzt oder du bleibst zu Hause', 'Entweder du gehst zum Arzt oder du bleibst zu Hause', 'Entweder gehst du zur Ärztin oder du bleibst zu Hause', 'Entweder du gehst zur Ärztin oder du bleibst zu Hause'] },
+    { id: 'a2-10-d25', type: 'translate', prompt: 'Although I took a tablet, I still have a headache.', answers: ['Obwohl ich eine Tablette genommen habe, habe ich immer noch Kopfschmerzen', 'Obwohl ich eine Tablette eingenommen habe, habe ich immer noch Kopfschmerzen', 'Obwohl ich eine Tablette genommen habe, habe ich noch Kopfschmerzen', 'Ich habe immer noch Kopfschmerzen, obwohl ich eine Tablette genommen habe', 'Ich habe immer noch Kopfschmerzen, obwohl ich eine Tablette eingenommen habe', 'Ich habe noch Kopfschmerzen, obwohl ich eine Tablette genommen habe', 'Obwohl ich eine Tablette genommen habe, tut mir der Kopf immer noch weh'], explain: 'Perfekt in the obwohl-clause: auxiliary (habe) goes last.' },
+    { id: 'a2-10-d26', type: 'translate', prompt: "I'm not going to work tomorrow because I'm signed off sick.", answers: ['Ich gehe morgen nicht zur Arbeit, weil ich krankgeschrieben bin', 'Morgen gehe ich nicht zur Arbeit, weil ich krankgeschrieben bin', 'Ich gehe morgen nicht arbeiten, weil ich krankgeschrieben bin'] },
+  ],
+};
+
+export default unit;
