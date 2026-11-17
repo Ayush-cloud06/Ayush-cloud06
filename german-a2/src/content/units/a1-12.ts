@@ -133,7 +133,7 @@ const unit: Unit = {
     { id: 'a1-12-d06', type: 'cloze', text: 'Wir ___ nach Berlin gefahren.', answers: [['sind']], en: 'We went to Berlin.', explain: 'fahren = movement A → B → sein.' },
     { id: 'a1-12-d07', type: 'cloze', text: 'Ich ___ eine Pizza gegessen.', answers: [['habe']], en: 'I ate a pizza.' },
     { id: 'a1-12-d08', type: 'choice', prompt: 'Participle of trinken:', options: ['getrunken', 'getrinkt', 'getrankt', 'trunken'], correct: 0 },
-    { id: 'a1-12-d09', type: 'choice', prompt: 'Rahul ___ nach Hause gegangen.', options: ['ist', 'hat', 'war', 'habe'], correct: 0, explain: 'gehen = movement → sein.' },
+    { id: 'a1-12-d09', type: 'choice', prompt: 'Rahul ___ nach Hause gegangen.', options: ['ist', 'hat', 'sind', 'habe'], correct: 0, explain: 'gehen = movement → sein.' },
     { id: 'a1-12-d10', type: 'choice', prompt: 'Which sentence is correct?', options: ['Ich habe gut geschlafen.', 'Ich bin gut geschlafen.', 'Ich habe gut schlafen.', 'Ich habe geschlafen gut.'], correct: 0, explain: 'schlafen: no movement → haben; participle at the end.' },
     { id: 'a1-12-d11', type: 'choice', prompt: 'Wir haben gestern einen Film ___.', options: ['gesehen', 'gesieht', 'geseht', 'sahen'], correct: 0 },
     { id: 'a1-12-d12', type: 'translate', prompt: 'I was tired yesterday.', answers: ['Ich war gestern müde.', 'Gestern war ich müde.'] },
