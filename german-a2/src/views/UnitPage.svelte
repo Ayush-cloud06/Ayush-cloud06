@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { app } from '../lib/app.svelte';
-  import { content } from '../lib/content';
+  import { canonicalVocabId, content, otherUnitsFor } from '../lib/content';
   import { go } from '../lib/router.svelte';
   import { cardId, State } from '../lib/srs';
   import Article from '../components/Article.svelte';
@@ -31,7 +31,7 @@
   }
 
   function cardLabel(vocabId: string) {
-    const c = app.cards.get(cardId(vocabId, 'rec'));
+    const c = app.cards.get(cardId(canonicalVocabId(vocabId), 'rec'));
     if (!c) return '';
     return c.state.state === State.New ? 'new' : c.state.state === State.Review ? 'review' : 'learning';
   }
@@ -99,6 +99,9 @@
               <tr>
                 <td class="nowrap"><Article item={v} /><Speaker text={v.pos === 'noun' && v.gender ? `${v.gender} ${v.de}` : v.de} /></td>
                 <td>{v.en}
+                  {#each [otherUnitsFor(v.id)] as others}
+                    {#if others.length}<span class="also small" title="Same word, reviewed once">also in {#each others as o, k (o.id)}{k ? ', ' : ''}<a href={`#/unit/${o.id}`}>Unit {o.order}</a>{/each}</span>{/if}
+                  {/each}
                   {#if v.example}
                     <div class="ex small"><span lang="de">{v.example.de}</span><Speaker text={v.example.de} /> <span class="muted">{v.example.en}</span></div>
                   {/if}
@@ -130,5 +133,7 @@
   .tablewrap { overflow-x: auto; }
   .nowrap { white-space: nowrap; }
   .ex { margin-top: 0.15rem; }
+  .also { margin-left: 0.4rem; color: var(--muted); white-space: nowrap; }
+  .also a { color: var(--muted); text-decoration: underline; }
   .legend { margin: -0.3rem 0 0.4rem; }
 </style>

@@ -1,5 +1,5 @@
 // Global app state: an in-memory cache of everything in storage, written through on change.
-import { content } from './content';
+import { canonicalVocabId, content } from './content';
 import {
   openStorage, parseExport,
   type CardRow, type ExportData, type ReviewLogRow, type Storage, type UnitProgressRow, type UnitStatus,
@@ -75,7 +75,11 @@ export class AppState {
   }
 
   // ---- cards --------------------------------------------------------------
-  position = (vocabId: string) => content.vocabById.get(vocabId)?.pos;
+  /** Content position of a canonical vocab id; undefined for unknown (orphaned) or alias ids. */
+  position = (vocabId: string) => {
+    const e = content.vocabById.get(vocabId);
+    return e && e.canonicalId === vocabId ? e.pos : undefined;
+  };
 
   counts(now = this.now) {
     return todayCounts(this.cards.values(), this.logs, this.settings, now, this.position);
@@ -86,6 +90,7 @@ export class AppState {
     const m = new Map(this.cards);
     for (const r of rows) m.set(r.id, r);
     this.cards = m;
+    this.now = Date.now(); // keep "now"-derived counts consistent with the cards just written
     await this.db.putCards(rows);
   }
 
@@ -97,7 +102,7 @@ export class AppState {
     let added = 0;
     unit.vocab.forEach((v, i) => {
       // created = now + i keeps authored order within the unit
-      const fresh = newCards(v.id, now).map((c) => ({ ...c, created: now + i }));
+      const fresh = newCards(canonicalVocabId(v.id), now).map((c) => ({ ...c, created: now + i }));
       const missing = fresh.filter((c) => !this.cards.has(c.id));
       if (missing.length) added++;
       rows.push(...missing);
@@ -113,7 +118,7 @@ export class AppState {
     if (!unit) return;
     const rows: CardRow[] = [];
     for (const v of unit.vocab) {
-      for (const c of newCards(v.id, now)) {
+      for (const c of newCards(canonicalVocabId(v.id), now)) {
         const existing = this.cards.get(c.id) ?? c;
         const k = markKnown(existing, now);
         if (k !== existing || !this.cards.has(c.id)) rows.push(k);
@@ -177,7 +182,7 @@ export class AppState {
     if (!unit || !unit.vocab.length) return 0;
     let n = 0;
     for (const v of unit.vocab) {
-      const c = this.cards.get(cardId(v.id, 'rec'));
+      const c = this.cards.get(cardId(canonicalVocabId(v.id), 'rec'));
       if (c && c.state.state !== State.New) n++;
     }
     return n / unit.vocab.length;
@@ -185,7 +190,7 @@ export class AppState {
 
   unitAdded(unitId: string): boolean {
     const unit = content.unitById.get(unitId);
-    return !!unit && unit.vocab.length > 0 && unit.vocab.every((v) => this.cards.has(cardId(v.id, 'rec')));
+    return !!unit && unit.vocab.length > 0 && unit.vocab.every((v) => this.cards.has(cardId(canonicalVocabId(v.id), 'rec')));
   }
 
   /** Most recently opened unit that isn't finished, else the first not-started unit. */

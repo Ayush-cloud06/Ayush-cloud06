@@ -171,3 +171,14 @@ describe('points', () => {
     expect(points('wrong')).toBe(0);
   });
 });
+
+describe('punctuation and notes', () => {
+  it('missing inner comma is almost with a Punctuation note', () => {
+    expect(checkOne('Ja das ist gut', 'Ja, das ist gut')).toMatchObject({ result: 'almost', notes: ['Punctuation'] });
+    expect(checkOne('ja das ist gut', 'Ja, das ist gut')).toMatchObject({ result: 'almost', notes: ['Capitalisation', 'Punctuation'] });
+  });
+  it('does not add a grammar note to a completely different answer', () => {
+    expect(checkOne('Ich bin müde', 'Wer ist das? Das ist Herr Becker').notes).toEqual([]);
+    expect(checkOne('Ich wohne im Berlin', 'Ich wohne in Berlin').notes).toEqual(['Check the grammar']);
+  });
+});

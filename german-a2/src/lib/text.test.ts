@@ -16,3 +16,15 @@ describe('text', () => {
     expect(spans('a ** b')).toEqual([{ bold: false, text: 'a ** b' }]);
   });
 });
+
+describe('italic', () => {
+  it('renders *x* as italic but leaves stray asterisks', () => {
+    expect(spans('the *second* letter')).toEqual([
+      { bold: false, text: 'the ' },
+      { bold: false, italic: true, text: 'second' },
+      { bold: false, text: ' letter' },
+    ]);
+    expect(spans('2 * 3 = 6')).toEqual([{ bold: false, text: '2 * 3 = 6' }]);
+    expect(spans('**a** and *b*').map((s) => s.text)).toEqual(['a', ' and ', 'b']);
+  });
+});

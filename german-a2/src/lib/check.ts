@@ -147,6 +147,14 @@ export function checkOne(input: string, expected: string, opts: CheckOptions = {
     }
   }
 
+  // Only inner punctuation (commas, quotes, …) differs.
+  const unpunct = (x: string) => x.replace(/[,;:"'\u2013\u2014-]/g, ' ').replace(/\s+/g, ' ').trim();
+  if (unpunct(a) !== a || unpunct(b) !== b) {
+    const r = checkOne(unpunct(a), unpunct(b), opts);
+    if (r.result === 'correct') return { result: 'almost', matched: expected, notes: ['Punctuation'] };
+    if (r.result === 'almost') return { ...r, matched: expected, notes: [...r.notes, 'Punctuation'].filter((n, i, arr) => arr.indexOf(n) === i) };
+  }
+
   const la = a.toLowerCase();
   const lb = b.toLowerCase();
   if (la === lb) return { result: 'almost', matched: expected, notes: ['Capitalisation'] };
@@ -176,7 +184,9 @@ export function checkOne(input: string, expected: string, opts: CheckOptions = {
       return { result: 'almost', matched: expected, notes };
     }
   }
-  return { result: 'wrong', matched: expected, notes: isGrammarDifference(la, lb) ? ['Check the grammar'] : [] };
+  // Flag grammar only when the answer was close; a wholly different sentence gets no note.
+  const close = levenshtein(la, lb, Math.max(2, Math.ceil(lb.length * 0.2))) <= Math.max(2, Math.ceil(lb.length * 0.2));
+  return { result: 'wrong', matched: expected, notes: close && isGrammarDifference(la, lb) ? ['Check the grammar'] : [] };
 }
 
 const RANK: Record<CheckResult, number> = { correct: 2, almost: 1, wrong: 0 };

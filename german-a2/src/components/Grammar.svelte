@@ -8,7 +8,7 @@
 <section class="note">
   <h3>{note.heading}</h3>
   {#each paragraphs(note.body) as para, i (i)}
-    <p>{#each para as s, j (j)}{#if s.bold}<strong>{s.text}</strong>{:else}{s.text}{/if}{/each}</p>
+    <p>{#each para as s, j (j)}{#if s.bold}<strong>{s.text}</strong>{:else if s.italic}<em>{s.text}</em>{:else}{s.text}{/if}{/each}</p>
   {/each}
   {#if note.table}
     <div class="tablewrap">
@@ -16,7 +16,7 @@
         <thead><tr>{#each note.table.head as h, i (i)}<th>{h}</th>{/each}</tr></thead>
         <tbody>
           {#each note.table.rows as r, i (i)}
-            <tr>{#each r as c, j (j)}<td>{#each spans(c) as s, k (k)}{#if s.bold}<strong>{s.text}</strong>{:else}{s.text}{/if}{/each}</td>{/each}</tr>
+            <tr>{#each r as c, j (j)}<td>{#each spans(c) as s, k (k)}{#if s.bold}<strong>{s.text}</strong>{:else if s.italic}<em>{s.text}</em>{:else}{s.text}{/if}{/each}</td>{/each}</tr>
           {/each}
         </tbody>
       </table>

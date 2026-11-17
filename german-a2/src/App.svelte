@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { untrack } from 'svelte';
   import { app } from './lib/app.svelte';
   import { content } from './lib/content';
   import { router, go } from './lib/router.svelte';
@@ -14,6 +15,12 @@
 
   const route = $derived(router.route);
   const section = $derived(route.path[0] ?? 'today');
+
+  // Refresh the shared clock on every navigation so due counts are current.
+  $effect(() => {
+    void route;
+    untrack(() => (app.now = Date.now()));
+  });
 
   // Theme
   $effect(() => {

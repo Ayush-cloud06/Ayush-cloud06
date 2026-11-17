@@ -83,8 +83,11 @@ export function checkDrill(d: Drill, answer: string | string[] | number): DrillC
       return { ...checkAnswer(a, d.answers), given: a };
     }
     case 'order': {
+      // Word order is what's drilled: inner punctuation is ignored in both directions.
       const a = String(answer);
-      return { ...checkAnswer(a, [joinWords(d.words)]), given: a };
+      const strip = (x: string) => x.replace(/[,;:]/g, ' ').replace(/\s+/g, ' ').trim();
+      const c = checkAnswer(strip(a), [strip(joinWords(d.words))]);
+      return { ...c, matched: joinWords(d.words), given: a };
     }
     case 'cloze': {
       const fills = Array.isArray(answer) ? answer : [String(answer)];

@@ -51,3 +51,12 @@ describe('drills', () => {
     expect(shuffle([1, 2, 3]).sort()).toEqual([1, 2, 3]);
   });
 });
+
+describe('order drill punctuation', () => {
+  it('ignores commas in order drills', () => {
+    const o: Drill = { id: 'x-d2', type: 'order', en: 'x', words: ['Das', 'sind', 'keine', 'Bücher', 'das', 'sind', 'Hefte'] };
+    expect(checkDrill(o, 'Das sind keine Bücher, das sind Hefte.').result).toBe('correct');
+    const p: Drill = { id: 'x-d3', type: 'order', en: 'x', words: ['Ja', ',', 'gern', '.'] };
+    expect(checkDrill(p, 'Ja gern').result).toBe('correct');
+  });
+});
